@@ -10,34 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item navigation__item--active">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#"></a>
-                </li>
-            </ul>
-        </nav>
+        
         <section class="section first">
             <div class="first__inner inner">
                 <header class="first__header">
@@ -129,7 +102,46 @@
             </div>
         </section>
 
-        <section class="section third"></section>
+        <section class="section third">
+            <div class="container third__inner">
+                <div class="slider">
+                    <ul class="slider__list">
+                        <li class="slider__item">
+                            <div class="slider__left">
+                                <img src="img/content/burgers/first.png" alt="dark burger">
+                            </div>
+                            <div class="slider__right">
+                                <h2 class="slider__header common-header">Dark BEEF Burger</h2>
+                                <p class="slider__text">
+                                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                                    тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                    салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                </p>
+                            <footer class="slider__footer">
+                                <div class="slider__price common-header">
+                                    <span class="slider__price-left">500</span>
+                                    <span class="slider__price-right">рублей</span>
+                                </div>
+                                <div class="slider__btn">
+                                    <a class="order-btn" href="#order-section">Заказать</a>
+                                </div>
+                            </footer>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="slider__link slider__link--left" href="#">
+                        <svg class="slider__arrow-left">
+                            <use width="29" height="14" xlink:href="#first-arrow"></use>
+                        </svg>
+                    </a>
+                    <a class="slider__link slider__link--right" href="#">
+                        <svg class="slider__arrow-right">
+                            <use width="29" height="14" xlink:href="#first-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <section class="section fourth">
             <div class="fourth__inner">
@@ -317,13 +329,140 @@
                 </li>
             </ul>
         </section>
+        <section class="section seventh">
+            <div class="seventh__inner container">
+                <h2 class="seventh__header common-header">Закажите доставку</h2>
+                <form class="seventh__form form" action="post">
+                    <div class="form__column">
+                        <div class="form__row">
+                            <label class="form__label">
+                                <div class="form__label-title">Имя</div>
+                                <input class="form__input" type="text" name="name">
+                            </label>
+                            <label class="form__label">
+                                <div class="form__label-title">Телефон</div>
+                                <input class="form__input" type="text" name="phone">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label">
+                                <div class="form__label-title">Улица</div>
+                                <input class="form__input" type="text" name="street">
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label">
+                                <div class="form__label-title">Дом</div>
+                                <input class="form__input" type="text" name="name">
+                            </label>
+                            <label class="form__label">
+                                <div class="form__label-title">Корпус</div>
+                                <input class="form__input" type="text" name="phone">
+                            </label>
+                            <label class="form__label">
+                                <div class="form__label-title">Квартира</div>
+                                <input class="form__input" type="text" name="name">
+                            </label>
+                            <label class="form__label">
+                                <div class="form__label-title">Этаж</div>
+                                <input class="form__input" type="text" name="phone">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form__row">
+                            <label class="form__label">
+                                <div class="form__title">Комментарий</div>
+                                <textarea class="form__textarea"></textarea>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__radio">
+                                <input class="form__radio-btn" type="radio" name="pay">
+                                <div class="form__radio-img"></div>
+                                <div class="form__radio-title">Потребуется сдача</div>
+                            </label>
+                            <label class="form__radio">
+                                <input class="form__radio-btn" type="radio" name="pay">
+                                <div class="form__radio-img"></div>
+                                <div class="form__radio-title">Оплата по карте</div>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__checkbox">
+                                <input class="form__checkbox-btn" type="checkbox" name="callback">
+                                <div class="form__checkbox-img"></div>
+                                <div class="form__checkbox-title">Не перезванивать</div>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__btn">
+                                <a class="order-btn" href="#">Заказать</a>
+                            </div>
+                            <label class="form__reset">
+                                <div class="form__reset-title">Очистить</div>
+                                <input class="form__rese-btn" type="reset">
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section eighth">
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__info">
+                    <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                    <a class="footer__phone" href="tel:+78123771377">
+                        <svg class="footer__phone-icon">
+                            <use width="12" height="11" xlink:href="#phone-icon"></use>
+                        </svg>
+                        <span class="footer__phone-number">+7 (812) 377-13-77</span>
+                    </a>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__svg" width="23" height="13">
+                                <use width="23" height="13" xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item" >
+                        <a class="footer__link" href="#">
+                            <svg class="footer__svg" width="20" height="20">
+                                <use width="20" height="20" xlink:href="#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__svg" width="20" height="20">
+                                <use width="20" height="20" xlink:href="#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <svg class="footer__svg" width="20" height="16">
+                                <use width="20" height="16" xlink:href="#tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+        </footer>
+    </section>
+
     </div>
 
-    <div hidden="">
+    <div class="all-svg" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="69" viewBox="0 0 92 69">
             <g id="main-logo">
                 <g transform="translate(-77 -12)">
-                    <image width="92" height="69" transform="translate(77 12)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABFCAYAAADHNoELAAAYgUlEQVR4Xt1ce3wU1fX/
+                    <image width="92" height="69" transform="translate(77 12)"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABFCAYAAADHNoELAAAYgUlEQVR4Xt1ce3wU1fX/
                     ntnHbAKCbyC7Qa1INiCiImg2qPhCIZtkgz+UPrSlSu3LatVqq7VSq7bWX7W22tb3ox9rC5VsyAbFR0UhG0GlaMVMFIuQTRCFapQks6
                     85/dzZR2ZnZ5NAKETvX8nMnTvnfvfcc8/5nnOHMIzba9+a5hizvecqIv42gCMBRAC+z+1o+yUtRXIYi15QNBquQm+bP+GwZNzeBGB6
                     voz0R0+w9bvDVfb+5BqWgO+cM2FUr2xfA2BKIeGZpVNKG95e+3kDfdgBzgB1BLzLAfj71RTGE+4G5WsDAZ4ebxFAAUDbwTbpF6VPtb
@@ -405,22 +544,95 @@
                     ER4RK4Kmz+jN9Dr9+j+sNBwPfFR5z1G40RyfHCTcN8G1fL9YP2xvOAktS9k6xajshwdE4vK9zD0tCGMmfdBvXgInfY74Fvryo+VWK+GSn
                     0kcjePn5gCpVYkucZYnpzBRg35GnSeJV0xq4Z8QtvHi9oUueeTIwZLPg0B6/T0hjrCEJ6P1HlFya/4UI34TrhGhOaEpC3cXV49GjqlPE
                     n2UUXd414rdAwmGvI1iyiSmX7FtmRI0vSyaNEsyy+GMK1+H93vGi6kEx8HG+iM5lABUBt9ws28FMxPAzRW+MuCMZR7Ss7bnbNKQ5VjWA
-                    A+1EkM5nmdck0mnxQVrSIXDfBjMseuG6pfP5h3G/v8F1lJXWy94OllAAAAAElFTkSuQmCC"></image>
+                    A+1EkM5nmdck0mnxQVrSIXDfBjMseuG6pfP5h3G/v8F1lJXWy94OllAAAAAElFTkSuQmCC"/>
                 </g>
             </g> 
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="14" viewBox="0 0 29 14">
             <g id="first-arrow">
                 <g transform="translate(-535 -595)">
-                    <image width="29" height="14" transform="translate(535 595)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAOCAYAAADT0Rc6AAABb0lEQV
+                    <image width="29" height="14" transform="translate(535 595)"
+                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAOCAYAAADT0Rc6AAABb0lEQV
                      Q4T7XUSytFYRTG8f8zEQoDlxRGTBRlRBRxinIryvfwEeQj+B4GyjUDl5RiQjEwIBNKLgMGyGRp1Tqn7TjnbNd3uN
                      v7/b3PWmu/MrNToBwYlHTFPy0zawZ2gFeZ2RHQBVz8F5wAW4FjRxuAfcAfONwn6favAhfc3zfPO4mXOyPp7rewmd
                      UDW0BHspLKbhywJ24BHPYeP/wUNrPa6KGDPiu92ZnJoZG4LV5sAg6BEUmP34XNrAbYBLqB6whwnt3nA5qA94DGn8
                      B54A3QLykHuvEJDbgzelEXycclPaclNrNKYNWTAfcxGyf53xVEC8DbwEQpOMAVYKgUWDRpYrh6ojfVwDowJekt/+
                      RmVgYsAaPAU8zCQbHKFE1aBF4GZpJwgIvA5FfA1KQJeADYACoi+aykMzNrBxaAYeDFk0raTet9atIEnIkSVsUzSw
-                     yil3Rakl8EqevLaAyXX5VzwBjgP7/fWmvAvKTLVC1eeAdtepm/B3dlpQAAAABJRU5ErkJggg=="></image>
+                     yil3Rakl8EqevLaAyXX5VzwBjgP7/fWmvAvKTLVC1eeAdtepm/B3dlpQAAAABJRU5ErkJggg=="/>
                 </g>
             </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="11" viewBox="0 0 12 11">
+            <g id="phone-icon">
+                <g transform="translate(-80 -5177)">
+                    <image width="12" height="11" transform="translate(80 5177)" 
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcG
+                    xfAAABFUlEQVQoU32PMUvDYBCG37exoktXoY04VM0nnXS2gwgOLk0UxdVVcHCqoOAgqH/ApZOCuB
+                    RpO3UR/RG2GFpdmuDiZEHQtulJQ8SKJrfd3fMc7/FlfVZ5XqwIIK1p/YXkTcNGRNGx1B0ESz5D3O
+                    sle5mAhDl0TOUBiP0A/dXJcqMaLljKhSAVAIV2XNvNFOudcCGnTkHsA3j/+OwlZ6pP7cgf3LVpXb
+                    yRJogxAhd62d6OFAbLVm5uh5Rz/2/BgV6xT0IjfS8cyziDMB/013F29yZKz6+uaVwSzEJ4lJp/vO
+                    LwpZZpHBI8DmZvBB8EsjjE1H4JfjxTrRAoAJj6J1bzjzCA6huZ0US3twnhFogsgHGAtxDJfwGkYF
+                    R3k5W4HgAAAABJRU5ErkJggg=="/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <symbol id="vk" viewBox="0 0 126 72">
+                <path d="M124.523,64.503c-0.152-0.328-0.293-0.597-0.426-0.816
+                c-2.172-3.91-6.324-8.711-12.449-14.401l-0.129-0.134l-0.066-0.063l-0.066-0.066h-0.063c-2.781-2.651-4.543-4.434-5.281-5.344
+                c-1.348-1.738-1.652-3.5-0.914-5.281c0.523-1.348,2.477-4.19,5.867-8.538c1.781-2.302,3.195-4.149,4.234-5.539
+                c7.52-9.996,10.777-16.383,9.777-19.164l-0.387-0.649c-0.262-0.39-0.934-0.75-2.02-1.074c-1.086-0.327-2.477-0.383-4.172-0.163
+                L99.656,3.398c-0.301-0.105-0.738-0.099-1.301,0.034c-0.566,0.13-0.852,0.195-0.852,0.195L97.18,3.793l-0.258,0.195
+                c-0.219,0.129-0.457,0.354-0.719,0.683c-0.258,0.325-0.477,0.707-0.648,1.142c-2.047,5.258-4.367,10.145-6.977,14.663
+                c-1.609,2.695-3.086,5.031-4.434,7.009c-1.348,1.976-2.477,3.434-3.387,4.366c-0.914,0.935-1.738,1.685-2.477,2.246
+                c-0.742,0.567-1.305,0.806-1.695,0.72c-0.391-0.091-0.762-0.177-1.109-0.263c-0.609-0.39-1.098-0.922-1.465-1.597
+                c-0.371-0.672-0.621-1.52-0.75-2.543c-0.129-1.021-0.207-1.899-0.23-2.637c-0.02-0.738-0.008-1.785,0.035-3.129
+                c0.043-1.349,0.066-2.263,0.066-2.738c0-1.653,0.031-3.446,0.094-5.379c0.066-1.935,0.121-3.465,0.164-4.594
+                c0.043-1.13,0.066-2.324,0.066-3.587c0-1.258-0.078-2.245-0.23-2.965c-0.148-0.715-0.379-1.41-0.684-2.086
+                c-0.305-0.672-0.75-1.194-1.336-1.562c-0.586-0.371-1.313-0.664-2.18-0.883c-2.305-0.521-5.238-0.802-8.8-0.849
+                c-8.082-0.086-13.274,0.438-15.579,1.567c-0.914,0.476-1.738,1.129-2.476,1.953c-0.781,0.957-0.891,1.479-0.328,1.565
+                c2.609,0.392,4.453,1.325,5.543,2.802l0.39,0.784c0.305,0.563,0.61,1.563,0.911,2.996c0.304,1.435,0.5,3.021,0.585,4.758
+                c0.219,3.173,0.219,5.888,0,8.149c-0.214,2.257-0.421,4.019-0.617,5.277c-0.195,1.262-0.488,2.28-0.879,3.065
+                c-0.39,0.782-0.652,1.258-0.785,1.435c-0.129,0.172-0.238,0.28-0.324,0.323c-0.566,0.22-1.152,0.328-1.762,0.328
+                c-0.605,0-1.344-0.304-2.215-0.914c-0.867-0.608-1.769-1.444-2.703-2.512c-0.933-1.062-1.988-2.55-3.164-4.464
+                c-1.172-1.911-2.386-4.168-3.648-6.778l-1.043-1.89c-0.653-1.215-1.543-2.985-2.672-5.313c-1.129-2.323-2.129-4.569-2.996-6.745
+                c-0.348-0.91-0.871-1.605-1.567-2.087l-0.324-0.194c-0.219-0.172-0.566-0.356-1.043-0.556c-0.48-0.194-0.976-0.336-1.5-0.422
+                L4.172,3.265c-1.824,0-3.063,0.414-3.715,1.238L0.195,4.895C0.066,5.113,0,5.46,0,5.938c0,0.48,0.129,1.065,0.391,1.762
+                C3,13.824,5.832,19.734,8.898,25.425c3.063,5.696,5.723,10.278,7.981,13.754c2.262,3.478,4.562,6.758,6.91,9.84
+                c2.348,3.086,3.902,5.063,4.66,5.935c0.762,0.871,1.36,1.519,1.793,1.953l1.629,1.565c1.043,1.043,2.574,2.293,4.598,3.746
+                c2.02,1.457,4.258,2.891,6.711,4.305c2.457,1.41,5.312,2.563,8.574,3.453c3.258,0.892,6.43,1.25,9.516,1.074h7.496
+                c1.52-0.129,2.672-0.609,3.453-1.433l0.258-0.324c0.176-0.262,0.34-0.665,0.488-1.208c0.152-0.542,0.23-1.14,0.23-1.792
+                c-0.043-1.868,0.098-3.551,0.422-5.051c0.324-1.496,0.695-2.625,1.109-3.388c0.414-0.762,0.879-1.401,1.402-1.922
+                c0.52-0.522,0.891-0.836,1.109-0.944c0.215-0.11,0.387-0.185,0.52-0.231c1.043-0.347,2.27-0.007,3.684,1.012
+                c1.41,1.024,2.734,2.281,3.977,3.781c1.238,1.5,2.727,3.184,4.461,5.051c1.742,1.867,3.262,3.258,4.563,4.172l1.305,0.781
+                c0.871,0.524,2,1,3.391,1.435c1.391,0.437,2.605,0.547,3.648,0.327l16.688-0.262c1.648,0,2.934-0.272,3.844-0.815
+                c0.914-0.544,1.453-1.142,1.629-1.789c0.176-0.653,0.184-1.392,0.035-2.22C124.824,65.406,124.672,64.828,124.523,64.503
+                L124.523,64.503z M124.523,64.503"/>
+            </symbol>
+            <symbol id="fb" viewBox="0 0 36.711 36.711">
+                <path d="M36.711,34.686c0,1.119-0.907,2.025-2.026,2.025H25.33V22.495h4.771l0.715-5.541H25.33v-3.537
+                c0-1.604,0.445-2.696,2.746-2.696l2.934-0.001V5.764c-0.508-0.067-2.249-0.219-4.275-0.219c-4.23,0-7.127,2.582-7.127,7.323v4.086
+                h-4.784v5.541h4.784v14.216H2.026C0.907,36.711,0,35.805,0,34.686V2.026C0,0.907,0.907,0,2.026,0h32.659
+                c1.119,0,2.026,0.907,2.026,2.026V34.686z"/>
+            </symbol>
+            <symbol id="inst" viewBox="0 0 36.663 36.664">
+                <path d="M32.305,0H4.357C1.95,0,0,1.946,0,4.349v27.967c0,2.4,1.95,4.348,4.357,4.348h27.947
+                c2.407,0,4.358-1.947,4.358-4.348V4.349C36.663,1.946,34.712,0,32.305,0 M26.352,5.729c0-0.632,0.513-1.146,1.146-1.146h3.438
+                c0.632,0,1.145,0.514,1.145,1.146v3.438c0,0.633-0.513,1.146-1.145,1.146h-3.438c-0.633,0-1.146-0.513-1.146-1.146V5.729z
+                M18.374,11.341c3.894,0,7.051,3.149,7.051,7.033c0,3.885-3.157,7.034-7.051,7.034s-7.051-3.148-7.051-7.034
+                C11.323,14.49,14.48,11.341,18.374,11.341 M33.226,32.08c0,0.633-0.513,1.146-1.146,1.146H4.583c-0.633,0-1.146-0.514-1.146-1.146
+                V14.895H8.02c-0.597,0.858-0.798,2.462-0.798,3.479c0,6.135,5.003,11.127,11.152,11.127s11.153-4.992,11.153-11.127
+                c0-1.018-0.145-2.596-0.885-3.479h4.583V32.08z"/>
+            </symbol>
+            <symbol id="tw" viewBox="0 0 37.453 31.21">
+                <path d="M36.421,0.577c-1.486,0.902-3.129,1.558-4.884,1.909C30.14,0.956,28.142,0,25.93,0
+                c-4.24,0-7.682,3.528-7.682,7.879c0,0.618,0.066,1.217,0.198,1.794C12.061,9.344,6.399,6.211,2.607,1.438
+                c-0.662,1.168-1.04,2.522-1.04,3.966c0,2.731,1.356,5.144,3.418,6.557c-1.257-0.038-2.444-0.396-3.481-0.981v0.096
+                c0,3.819,2.648,7.004,6.167,7.725c-0.645,0.186-1.324,0.277-2.025,0.277c-0.495,0-0.979-0.047-1.447-0.139
+                c0.979,3.129,3.815,5.408,7.179,5.469c-2.63,2.115-5.944,3.375-9.544,3.375c-0.619,0-1.232-0.037-1.833-0.109
+                c3.4,2.232,7.441,3.537,11.778,3.537c14.136,0,21.863-12.004,21.863-22.417c0-0.343-0.006-0.685-0.021-1.021
+                c1.502-1.112,2.807-2.498,3.832-4.078c-1.376,0.626-2.857,1.05-4.412,1.24C34.629,3.961,35.847,2.417,36.421,0.577"/>
+            </symbol>
         </svg>
     </div>
 
