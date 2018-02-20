@@ -1,460 +1,955 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Mr.Burger</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
 </head>
 <body>
     <div class="wrapper">
-        
-        <section class="section first">
-            <div class="first__inner inner">
-                <header class="first__header">
-                    <a class="first__logo" href="index.html">
-                        <svg class="first__logo-svg">
-                            <use width="92" height="69" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-logo"></use>
-                        </svg>
-                    </a>
-                    <nav class="first-menu">
-                        <ul class="first-menu__list">
-                            <li class="first-menu__item">
-                                <a class="first-menu__link" href="#">О нас</a>
-                            </li>
-                            <li class="first-menu__item">
-                                <a class="first-menu__link" href="#">Бургеры</a>
-                            </li>
-                            <li class="first-menu__item">
-                                <a class="first-menu__link" href="#">Команда</a>
-                            </li>
-                            <li class="first-menu__item">
-                                <a class="first-menu__link" href="#">Меню</a>
-                            </li>
-                            <li class="first-menu__item">
-                                <a class="first-menu__link" href="#">Отзывы</a>
-                            </li>
-                            <li class="first-menu__item">
-                                <a class="first-menu__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="first__btn">
-                        <a class="first__btn-link" href="#">Заказать</a>
+        <div class="wrapper__scroll" id="wrapper-scroll">
+            <section class="section first" id="first-section">
+                <div class="first__inner container">
+                    <header class="first__header header">
+                        <a class="header__logo" id="logo" href="index.html">
+                            <svg class="header__logo-svg">
+                                <use width="92" height="69" xlink:href="#main-logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header-menu">
+                            <ul class="header-menu__list">
+                                <li class="header-menu__item">
+                                    <a class="header-menu__link nav-btn" href="#second-section">О нас</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a class="header-menu__link nav-btn" href="#third-section">Бургеры</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a class="header-menu__link nav-btn" href="#fourth-section">Команда</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a class="header-menu__link nav-btn" href="#fifth-section">Меню</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a class="header-menu__link nav-btn" href="#sixth-section">Отзывы</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a class="header-menu__link nav-btn" href="#eighth-section">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__btn">
+                            <a class="header__btn-link order-btn nav-btn" href="#order-section">Заказать</a>
+                        </div>
+                        <a class="header__hamburger hamburger" id="hamburger" href="#">
+                            <div class="hamburger__btn"></div>
+                        </a>
+                    </header>
+                    <div class="first-box">
+                        <div class="first-box__img">
+                            <span class="hidden">Burger's picture</span>
+                        </div>
+                        <div class="first-box__header">
+                            <h2 class="common-header first-box__title">
+                                <span class="first-box__title-up">МЫ делаем</span>
+                                <span class="first-box__title-down">натуральные бургеры</span>
+                            </h2>
+                        </div>
                     </div>
-                </header>
-                <div class="first-box">
-                    <div class="first-box__img">
-                        <span class="hidden">Burger's picture</span>
+                    <div class="first__bottom">
+                        <a class="first__arrow nav-btn" href="#second-section">
+                            <svg class="first__arrow-svg">
+                                <use width="29" height="14" xlink:href="#first-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="first-box__header">
-                        <h2 class="common-header first-box__title">
-                            <span class="first-box__title-up">МЫ делаем</span>
-                            <span class="first-box__title-down">натуральные бургеры</span>
-                        </h2>
-                    </div>
-                </div>
-                <footer class="first__footer">
-                    <a class="first__arrow" href="#second-section">
-                        <svg class="first__arrow-svg">
-                            <use width="29" height="14" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#first-arrow"></use>
-                        </svg>
-                    </a>
-                </footer>
-            </div>  
-        </section>
-        <section class="section second" id="second-section">
-            <div class="second__inner inner">
-                <div class="second__box">
-                    <h2 class="common-header second__header">мы лучшие</h2>
-                    <ul class="second__list">
-                        <li class="second__item">
-                            <div class="second__img second__img--meat">
-                                <span class="hidden">лого</span>
-                            </div>
-                            <h3 class="second__title">100% свежее мясо</h3>
-                            <p class="second__text">
-                                У нас все исключительно свежее, никаких заготовок: все, что сегодня приготовлено, сегодня же обязательно будет употреблено.
-                            </p>
-                        </li>
-                        <li class="second__item">
-                            <div class="second__img second__img--hand">
-                                <span class="hidden">лого</span>
-                            </div>
-                            <h3 class="second__title">Ручная  сборка</h3>
-                            <p class="second__text">
-                                Мы выпекаем 3 вида ароматных булочек для бургеров прямо на ваших глазах. После выпекания в печи булочка остывает до нужной температуры и используется максимум через 30-40 минут.
-                            </p>
-                        </li>
-                        <li class="second__item">
-                            <div class="second__img second__img--natural">
-                                <span class="hidden">лого</span>
-                            </div>
-                            <h3 class="second__title">Натуральные ингредиенты</h3>
-                            <p class="second__text">
-                                Главное наше ноу-хау в уникальном составе и системе прожарки котлет. Мы изготавливаем бленд из разных отрубов мраморной говядины.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section third">
-            <div class="container third__inner">
-                <div class="slider">
-                    <ul class="slider__list">
-                        <li class="slider__item">
-                            <div class="slider__left">
-                                <img src="img/content/burgers/second.png" alt="Я НЕ ПОНИМАЮ, ГДЕ МОЯ КАРТИНКА?">
-                            </div>
-                            <div class="slider__right">
-                                <h2 class="slider__header common-header">Dark BEEF Burger</h2>
-                                <p class="slider__text">
-                                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
-                                    тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
-                                    салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                                </p>
-                            <footer class="slider__footer">
-                                <div class="slider__price common-header">
-                                    <span class="slider__price-left">500</span>
-                                    <span class="slider__price-right">рублей</span>
+                </div>  
+            </section>
+            <section class="section second" id="second-section">
+                <div class="second__inner container">
+                    <div class="second__box">
+                        <h2 class="common-header second__header">мы лучшие</h2>
+                        <ul class="second__list">
+                            <li class="second__item">
+                                <div class="second__img second__img--meat">
+                                    <span class="hidden">лого</span>
                                 </div>
-                                <div class="slider__btn">
-                                    <a class="order-btn" href="#order-section">Заказать</a>
-                                </div>
-                            </footer>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class="slider__link slider__link--left" href="#">
-                        <svg class="slider__arrow-left">
-                            <use width="29" height="14" xlink:href="#first-arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="slider__link slider__link--right" href="#">
-                        <svg class="slider__arrow-right">
-                            <use width="29" height="14" xlink:href="#first-arrow"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section fourth">
-            <div class="fourth__inner">
-                <div class="fourth__inner-right">
-                    <div class="fourth__accordion">
-                        <h2 class="fourth__header common-header">команда</h2>
-                        <ul class="fourth__list">
-                            <li class="fourth__item">
-                                <a class="fourth__link common-header" href="#">Дэниэл Редклиф</a>
-                                <div class="fourth__worker">
-                                    <div class="fourth__worker-wrapper" style="background-image: url(img/content/aphex.jpg)">
-                                        <img class="fourth__worker-img hidden" src="img/content/aphex.jpg" alt="coworker">
-                                    </div>
-                                    <div class="fourth__worker-info">
-                                        <h3 class="fourth__worker-position">Оператор</h3>
-                                        <p class="fourth__worker-discription">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
-                                        </p>
-                                    </div>
+                                <div class="second__info">
+                                    <h3 class="second__title">100% свежее мясо</h3>
+                                    <p class="second__text">
+                                        У нас все исключительно свежее, никаких заготовок: все, что сегодня приготовлено, сегодня же обязательно будет употреблено.
+                                    </p>
                                 </div>
                             </li>
-                            <li class="fourth__item fourth__item--active">
-                                <a class="fourth__link common-header" href="#">Ричард Джеймс</a>
-                                <div class="fourth__worker">
-                                    <div class="fourth__worker-wrapper" style="background-image: url(img/content/aphex.jpg)">
-                                        <img class="fourth__worker-img hidden" src="img/content/aphex.jpg" alt="coworker">
-                                    </div>
-                                    <div class="fourth__worker-info">
-                                        <h3 class="fourth__worker-position">Оператор</h3>
-                                        <p class="fourth__worker-discription">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
-                                        </p>
-                                    </div>
+                            <li class="second__item">
+                                <div class="second__img second__img--hand">
+                                    <span class="hidden">лого</span>
+                                </div>
+                                <div class="second__info">
+                                    <h3 class="second__title">Ручная  сборка</h3>
+                                    <p class="second__text">
+                                        Мы выпекаем 3 вида ароматных булочек для бургеров прямо на ваших глазах. После выпекания в печи булочка остывает до нужной температуры и используется максимум через 30-40 минут.
+                                    </p>
                                 </div>
                             </li>
-                            <li class="fourth__item">
-                                <a class="fourth__link common-header" href="#">Джейк Финн</a>
-                                <div class="fourth__worker">
-                                    <div class="fourth__worker-wrapper" style="background-image: url(img/content/aphex.jpg)">
-                                        <img class="fourth__worker-img hidden" src="img/content/aphex.jpg" alt="coworker">
-                                    </div>
-                                    <div class="fourth__worker-info">
-                                        <h3 class="fourth__worker-position">Оператор</h3>
-                                        <p class="fourth__worker-discription">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
-                                        </p>
-                                    </div>
+                            <li class="second__item">
+                                <div class="second__img second__img--natural">
+                                    <span class="hidden">лого</span>
                                 </div>
-                            </li>
-                            <li class="fourth__item">
-                                <a class="fourth__link common-header" href="#">Николай Иванов</a>
-                                <div class="fourth__worker">
-                                    <div class="fourth__worker-wrapper" style="background-image: url(img/content/aphex.jpg)">
-                                        <img class="fourth__worker-img hidden" src="img/content/aphex.jpg" alt="coworker">
-                                    </div>
-                                    <div class="fourth__worker-info">
-                                        <h3 class="fourth__worker-position">Оператор</h3>
-                                        <p class="fourth__worker-discription">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
-                                        </p>
-                                    </div>
+                                <div class="second__info">
+                                    <h3 class="second__title">Натуральные ингредиенты</h3>
+                                    <p class="second__text">
+                                        Главное наше ноу-хау в уникальном составе и системе прожарки котлет. Мы изготавливаем бленд из разных отрубов мраморной говядины.
+                                    </p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section fifth"></section>
-
-        <section class="section sixth">
-            <ul class="sixth__list">
-                <li class="sixth__item sixth__item--client1">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Элиза Спилберг</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
+            </section>
+            <section class="section third" id="third-section">
+                <div class="container third__inner">
+                    <div class="slider">
+                        <a class="slider__link slider__link--left" id="slider-left" href="#">
+                            <svg class="slider__arrow-left">
+                                <use width="29" height="14" xlink:href="#first-arrow"></use>
+                            </svg>
+                        </a>
+                        <div class="slider__wrapper">
+                            <ul class="slider__list" id="slider-list">
+                                <li class="slider__item">
+                                    <a class="slider__stuff">
+                                        <svg class="slider__stuff-svg">
+                                            <use width="46" height="44" xlink:href="#burger-stuff"></use>
+                                        </svg>
+                                        <div class="slider__stuff-title">Состав</div>
+                                        <div class="slider__stuff-dropdown dropdown">
+                                            <table class="dropdown__table">
+                                                <tbody class="dropdow__tbody">
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="44" height="39">
+                                                                <use width="44" height="39" xlink:href="#stuff-beef"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Говядина</td>
+                                                        <td class="dropdown__td-weight">300 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="48" height="30">
+                                                                <use width="48" height="30" xlink:href="#stuff-bread"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Булочки</td>
+                                                        <td class="dropdown__td-weight">100 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="38" height="38">
+                                                                <use width="38" height="38" xlink:href="#stuff-salad"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Зелень</td>
+                                                        <td class="dropdown__td-weight">70 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="41" height="43">
+                                                                <use width="41" height="43" xlink:href="#stuff-sauce"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Соус</td>
+                                                        <td class="dropdown__td-weight">150 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="43" height="37">
+                                                                <use width="43" height="37" xlink:href="#stuff-cucomber"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Овощи</td>
+                                                        <td class="dropdown__td-weight">200 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="39" height="34">
+                                                                <use width="39" height="34" xlink:href="#stuff-cheese"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Сыр</td>
+                                                        <td class="dropdown__td-weight">80 г</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="close-btn close-btn--dropdown"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider__calorie">
+                                        <svg class="slider__calorie-svg">
+                                            <use width="60" height="60" xlink:href="#burger-calorie"></use>
+                                        </svg>
+                                        <div class="slider__calorie-title">1200</div>
+                                    </div>
+                                    <div class="slider__left">
+                                        <img class="slider__left-img" src="img/content/burgers/first.png" alt="dark burger">
+                                    </div>
+                                    <div class="slider__right">
+                                        <h2 class="slider__header common-header">Dark BEEF Burger</h2>
+                                        <p class="slider__text">
+                                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </p>
+                                        <footer class="slider__footer">
+                                            <div class="slider__price common-header">
+                                                <span class="slider__price-left">500</span>
+                                                <span class="slider__price-right">рублей</span>
+                                            </div>
+                                            <div class="slider__btn">
+                                                <a class="order-btn nav-btn" href="#order-section">Заказать</a>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </li>
+                                <li class="slider__item">
+                                    <a class="slider__stuff">
+                                        <svg class="slider__stuff-svg">
+                                            <use width="46" height="44" xlink:href="#burger-stuff"></use>
+                                        </svg>
+                                        <div class="slider__stuff-title">Состав</div>
+                                        <div class="slider__stuff-dropdown dropdown">
+                                            <table class="dropdown__table">
+                                                <tbody class="dropdow__tbody">
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="44" height="39">
+                                                                <use width="44" height="39" xlink:href="#stuff-beef"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Говядина</td>
+                                                        <td class="dropdown__td-weight">300 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="48" height="30">
+                                                                <use width="48" height="30" xlink:href="#stuff-bread"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Булочки</td>
+                                                        <td class="dropdown__td-weight">100 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="38" height="38">
+                                                                <use width="38" height="38" xlink:href="#stuff-salad"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Зелень</td>
+                                                        <td class="dropdown__td-weight">70 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="41" height="43">
+                                                                <use width="41" height="43" xlink:href="#stuff-sauce"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Соус</td>
+                                                        <td class="dropdown__td-weight">150 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="43" height="37">
+                                                                <use width="43" height="37" xlink:href="#stuff-cucomber"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Овощи</td>
+                                                        <td class="dropdown__td-weight">200 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="39" height="34">
+                                                                <use width="39" height="34" xlink:href="#stuff-cheese"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Сыр</td>
+                                                        <td class="dropdown__td-weight">80 г</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="close-btn close-btn--dropdown"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider__calorie">
+                                        <svg class="slider__calorie-svg">
+                                            <use width="60" height="60" xlink:href="#burger-calorie"></use>
+                                        </svg>
+                                        <div class="slider__calorie-title">1200</div>
+                                    </div>
+                                    <div class="slider__left">
+                                        <img class="slider__left-img" src="img/content/burgers/Cheeseburger.png" alt="Cheeseburger">
+                                    </div>
+                                    <div class="slider__right">
+                                        <h2 class="slider__header common-header">Cheese - burger</h2>
+                                        <p class="slider__text">
+                                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </p>
+                                        <footer class="slider__footer">
+                                            <div class="slider__price common-header">
+                                                <span class="slider__price-left">500</span>
+                                                <span class="slider__price-right">рублей</span>
+                                            </div>
+                                            <div class="slider__btn">
+                                                <a class="order-btn nav-btn" href="#order-section">Заказать</a>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </li>
+                                <li class="slider__item">
+                                    <a class="slider__stuff">
+                                        <svg class="slider__stuff-svg">
+                                            <use width="46" height="44" xlink:href="#burger-stuff"></use>
+                                        </svg>
+                                        <div class="slider__stuff-title">Состав</div>
+                                        <div class="slider__stuff-dropdown dropdown">
+                                            <table class="dropdown__table">
+                                                <tbody class="dropdow__tbody">
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="44" height="39">
+                                                                <use width="44" height="39" xlink:href="#stuff-beef"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Говядина</td>
+                                                        <td class="dropdown__td-weight">300 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="48" height="30">
+                                                                <use width="48" height="30" xlink:href="#stuff-bread"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Булочки</td>
+                                                        <td class="dropdown__td-weight">100 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="38" height="38">
+                                                                <use width="38" height="38" xlink:href="#stuff-salad"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Зелень</td>
+                                                        <td class="dropdown__td-weight">70 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="41" height="43">
+                                                                <use width="41" height="43" xlink:href="#stuff-sauce"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Соус</td>
+                                                        <td class="dropdown__td-weight">150 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="43" height="37">
+                                                                <use width="43" height="37" xlink:href="#stuff-cucomber"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Овощи</td>
+                                                        <td class="dropdown__td-weight">200 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="39" height="34">
+                                                                <use width="39" height="34" xlink:href="#stuff-cheese"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Сыр</td>
+                                                        <td class="dropdown__td-weight">80 г</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="close-btn close-btn--dropdown"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider__calorie">
+                                        <svg class="slider__calorie-svg">
+                                            <use width="60" height="60" xlink:href="#burger-calorie"></use>
+                                        </svg>
+                                        <div class="slider__calorie-title">1200</div>
+                                    </div>
+                                    <div class="slider__left">
+                                        <img class="slider__left-img" src="img/content/burgers/Chiken.png" alt="Chiken">
+                                    </div>
+                                    <div class="slider__right">
+                                        <h2 class="slider__header common-header">Chiken Burger</h2>
+                                        <p class="slider__text">
+                                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </p>
+                                        <footer class="slider__footer">
+                                            <div class="slider__price common-header">
+                                                <span class="slider__price-left">500</span>
+                                                <span class="slider__price-right">рублей</span>
+                                            </div>
+                                            <div class="slider__btn">
+                                                <a class="order-btn nav-btn" href="#order-section">Заказать</a>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </li>
+                                <li class="slider__item">
+                                    <a class="slider__stuff">
+                                        <svg class="slider__stuff-svg">
+                                            <use width="46" height="44" xlink:href="#burger-stuff"></use>
+                                        </svg>
+                                        <div class="slider__stuff-title">Состав</div>
+                                        <div class="slider__stuff-dropdown dropdown">
+                                            <table class="dropdown__table">
+                                                <tbody class="dropdow__tbody">
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="44" height="39">
+                                                                <use width="44" height="39" xlink:href="#stuff-beef"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Говядина</td>
+                                                        <td class="dropdown__td-weight">300 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="48" height="30">
+                                                                <use width="48" height="30" xlink:href="#stuff-bread"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Булочки</td>
+                                                        <td class="dropdown__td-weight">100 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="38" height="38">
+                                                                <use width="38" height="38" xlink:href="#stuff-salad"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Зелень</td>
+                                                        <td class="dropdown__td-weight">70 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="41" height="43">
+                                                                <use width="41" height="43" xlink:href="#stuff-sauce"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Соус</td>
+                                                        <td class="dropdown__td-weight">150 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="43" height="37">
+                                                                <use width="43" height="37" xlink:href="#stuff-cucomber"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Овощи</td>
+                                                        <td class="dropdown__td-weight">200 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="39" height="34">
+                                                                <use width="39" height="34" xlink:href="#stuff-cheese"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Сыр</td>
+                                                        <td class="dropdown__td-weight">80 г</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="close-btn close-btn--dropdown"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider__calorie">
+                                        <svg class="slider__calorie-svg">
+                                            <use width="60" height="60" xlink:href="#burger-calorie"></use>
+                                        </svg>
+                                        <div class="slider__calorie-title">1200</div>
+                                    </div>
+                                    <div class="slider__left">
+                                        <img class="slider__left-img" src="img/content/burgers/sandwich.png" alt="sandwich">
+                                    </div>
+                                    <div class="slider__right">
+                                        <h2 class="slider__header common-header">Sandwich Burger</h2>
+                                        <p class="slider__text">
+                                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </p>
+                                        <footer class="slider__footer">
+                                            <div class="slider__price common-header">
+                                                <span class="slider__price-left">500</span>
+                                                <span class="slider__price-right">рублей</span>
+                                            </div>
+                                            <div class="slider__btn">
+                                                <a class="order-btn nav-btn" href="#order-section">Заказать</a>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </li>
+                                <li class="slider__item">
+                                    <a class="slider__stuff">
+                                        <svg class="slider__stuff-svg">
+                                            <use width="46" height="44" xlink:href="#burger-stuff"></use>
+                                        </svg>
+                                        <div class="slider__stuff-title">Состав</div>
+                                        <div class="slider__stuff-dropdown dropdown">
+                                            <table class="dropdown__table">
+                                                <tbody class="dropdow__tbody">
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="44" height="39">
+                                                                <use width="44" height="39" xlink:href="#stuff-beef"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Говядина</td>
+                                                        <td class="dropdown__td-weight">300 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="48" height="30">
+                                                                <use width="48" height="30" xlink:href="#stuff-bread"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Булочки</td>
+                                                        <td class="dropdown__td-weight">100 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="38" height="38">
+                                                                <use width="38" height="38" xlink:href="#stuff-salad"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Зелень</td>
+                                                        <td class="dropdown__td-weight">70 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="41" height="43">
+                                                                <use width="41" height="43" xlink:href="#stuff-sauce"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Соус</td>
+                                                        <td class="dropdown__td-weight">150 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="43" height="37">
+                                                                <use width="43" height="37" xlink:href="#stuff-cucomber"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Овощи</td>
+                                                        <td class="dropdown__td-weight">200 г</td>
+                                                    </tr>
+                                                    <tr class="dropdown__tr">
+                                                        <td class="dropdown__td-img">
+                                                            <svg class="dropdown__td-svg" width="39" height="34">
+                                                                <use width="39" height="34" xlink:href="#stuff-cheese"></use>
+                                                            </svg>
+                                                        </td>
+                                                        <td class="dropdown__td-title">Сыр</td>
+                                                        <td class="dropdown__td-weight">80 г</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="close-btn close-btn--dropdown"></div>
+                                        </div>
+                                    </a>
+                                    <div class="slider__calorie">
+                                        <svg class="slider__calorie-svg">
+                                            <use width="60" height="60" xlink:href="#burger-calorie"></use>
+                                        </svg>
+                                        <div class="slider__calorie-title">1200</div>
+                                    </div>
+                                    <div class="slider__left">
+                                        <img class="slider__left-img" src="img/content/burgers/Spicy.png" alt="Spicy">
+                                    </div>
+                                    <div class="slider__right">
+                                        <h2 class="slider__header common-header">Spicy Burger</h2>
+                                        <p class="slider__text">
+                                            Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                                            тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                            салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                        </p>
+                                        <footer class="slider__footer">
+                                            <div class="slider__price common-header">
+                                                <span class="slider__price-left">500</span>
+                                                <span class="slider__price-right">рублей</span>
+                                            </div>
+                                            <div class="slider__btn">
+                                                <a class="order-btn nav-btn" href="#order-section">Заказать</a>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+                        <a class="slider__link slider__link--right" id="slider-right" href="#">
+                            <svg class="slider__arrow-right">
+                                <use width="29" height="14" xlink:href="#first-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
-                </li>
-                <li class="sixth__item sixth__item--client2">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Константин Спилберг</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sixth__item sixth__item--client3">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Ирина Щербакова</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sixth__item sixth__item--client4">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Владимир Суворкин</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sixth__item sixth__item--client5">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Руслан Рейх</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sixth__item sixth__item--client6">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Кристина Агутина</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sixth__item sixth__item--client7">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Иван Абрамов</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sixth__item sixth__item--client8">
-                    <div class="sixth__inner">
-                        <h3 class="sixth__inner-title">Том Веллинг</h3>
-                        <p class="sixth__inner-text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть... Никогда не думал,
-                            что булочки могут быть такими мягкими,
-                            котлетка такой сочной, а сыр таким расплавленным.
-                        </p>
-                        <div class="sixth__inner-btn">
-                            <a class="sixth__inner-link" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="section seventh">
-            <div class="seventh__inner container">
-                <h2 class="seventh__header common-header">Закажите доставку</h2>
-                <form class="seventh__form form" action="post">
-                    <div class="form__column">
-                        <div class="form__row">
-                            <label class="form__label">
-                                <div class="form__label-title">Имя</div>
-                                <input class="form__input" type="text" name="name">
-                            </label>
-                            <label class="form__label">
-                                <div class="form__label-title">Телефон</div>
-                                <input class="form__input" type="text" name="phone">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__label">
-                                <div class="form__label-title">Улица</div>
-                                <input class="form__input" type="text" name="street">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__label">
-                                <div class="form__label-title">Дом</div>
-                                <input class="form__input" type="text" name="name">
-                            </label>
-                            <label class="form__label">
-                                <div class="form__label-title">Корпус</div>
-                                <input class="form__input" type="text" name="phone">
-                            </label>
-                            <label class="form__label">
-                                <div class="form__label-title">Квартира</div>
-                                <input class="form__input" type="text" name="name">
-                            </label>
-                            <label class="form__label">
-                                <div class="form__label-title">Этаж</div>
-                                <input class="form__input" type="text" name="phone">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form__column">
-                        <div class="form__row">
-                            <label class="form__label">
-                                <div class="form__title">Комментарий</div>
-                                <textarea class="form__textarea"></textarea>
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__radio">
-                                <input class="form__radio-btn" type="radio" name="pay">
-                                <div class="form__radio-img"></div>
-                                <div class="form__radio-title">Потребуется сдача</div>
-                            </label>
-                            <label class="form__radio">
-                                <input class="form__radio-btn" type="radio" name="pay">
-                                <div class="form__radio-img"></div>
-                                <div class="form__radio-title">Оплата по карте</div>
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__checkbox">
-                                <input class="form__checkbox-btn" type="checkbox" name="callback">
-                                <div class="form__checkbox-img"></div>
-                                <div class="form__checkbox-title">Не перезванивать</div>
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <div class="form__btn">
-                                <a class="order-btn" href="#">Заказать</a>
-                            </div>
-                            <label class="form__reset">
-                                <div class="form__reset-title">Очистить</div>
-                                <input class="form__rese-btn" type="reset">
-                            </label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section class="section eighth">
-        <footer class="footer">
-            <div class="footer__inner container">
-                <div class="footer__info">
-                    <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                    <a class="footer__phone" href="tel:+78123771377">
-                        <svg class="footer__phone-icon">
-                            <use width="12" height="11" xlink:href="#phone-icon"></use>
-                        </svg>
-                        <span class="footer__phone-number">+7 (812) 377-13-77</span>
-                    </a>
                 </div>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__svg" width="23" height="13">
-                                <use width="23" height="13" xlink:href="#vk"></use>
-                            </svg>
-                        </a>
+            </section>
+            <section class="section fourth" id="fourth-section">
+                <div class="fourth__inner">
+                    <div class="fourth__inner-right">
+                        <div class="fourth__accordion">
+                            <h2 class="fourth__header common-header">команда</h2>
+                            <ul class="fourth__list" id="team-menu">
+                                <li class="fourth__item">
+                                    <a class="fourth__link" href="#">Дэниэл Редклиф</a>
+                                    <div class="fourth__worker">
+                                        <div class="fourth__worker-wrapper" style="background-image: url(img/content/team/aphex.jpg)">
+                                            <img class="fourth__worker-img hidden" src="img/content/team/aphex.jpg" alt="coworker">
+                                        </div>
+                                        <div class="fourth__worker-info">
+                                            <h3 class="fourth__worker-position">Оператор</h3>
+                                            <p class="fourth__worker-discription">
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fourth__item">
+                                    <a class="fourth__link" href="#">Ричард Джеймс</a>
+                                    <div class="fourth__worker">
+                                        <div class="fourth__worker-wrapper" style="background-image: url(img/content/team/aphex.jpg)">
+                                            <img class="fourth__worker-img hidden" src="img/content/team/aphex.jpg" alt="coworker">
+                                        </div>
+                                        <div class="fourth__worker-info">
+                                            <h3 class="fourth__worker-position">Оператор</h3>
+                                            <p class="fourth__worker-discription">
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fourth__item">
+                                    <a class="fourth__link" href="#">Джейк Финн</a>
+                                    <div class="fourth__worker">
+                                        <div class="fourth__worker-wrapper" style="background-image: url(img/content/team/aphex.jpg)">
+                                            <img class="fourth__worker-img hidden" src="img/content/team/aphex.jpg" alt="coworker">
+                                        </div>
+                                        <div class="fourth__worker-info">
+                                            <h3 class="fourth__worker-position">Оператор</h3>
+                                            <p class="fourth__worker-discription">
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fourth__item">
+                                    <a class="fourth__link" href="#">Николай Иванов</a>
+                                    <div class="fourth__worker">
+                                        <div class="fourth__worker-wrapper" style="background-image: url(img/content/team/aphex.jpg)">
+                                            <img class="fourth__worker-img hidden" src="img/content/team/aphex.jpg" alt="coworker">
+                                        </div>
+                                        <div class="fourth__worker-info">
+                                            <h3 class="fourth__worker-position">Оператор</h3>
+                                            <p class="fourth__worker-discription">
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.                                                 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section fifth" id="fifth-section">
+                <div class="fifth__inner">
+                    <h2 class="fifth__header common-header">Меню</h2>
+                    <ul class="fifth__list" id="burgers-menu">
+                        <li class="fifth__item">
+                            <a class="fifth__link fifth__link--meat" href="">
+                            <div class="fifth__link-text common-header">Для мясоедов</div>
+                            </a>
+                            <div class="fifth__container">
+                                <div class="fifth__container-inner">
+                                    <p>
+                                        Бургерная революция в России свершилась давно. Казалось бы, можно было подумать, что поезд ушел, но Black Star Burger успел заскочить в последний вагон уходящего поезда, поменять его направление и стать локомотивом. Мы готовим бургеры, потому что вопреки распространенному мнению на этот счет, бургеры – не вредная еда, это сложносочиненный бутерброд, которым можно с пользой насытиться, употребив меньшее количество калорий, чем, например, съев комплексный обед.
+                                    </p>
+                                    <p>
+                                        Бургерная революция в России свершилась давно. Казалось бы, можно было подумать, что поезд ушел, но Black Star Burger успел заскочить в последний вагон уходящего поезда, поменять его направление и стать локомотивом. Мы готовим бургеры, потому что вопреки распространенному мнению на этот счет, бургеры – не вредная еда, это сложносочиненный бутерброд, которым можно с пользой насытиться, употребив меньшее количество калорий, чем, например, съев комплексный обед.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fifth__item">
+                            <a class="fifth__link fifth__link--vegan" href="">
+                            <div class="fifth__link-text common-header">Вегетарианское</div>
+                            </a>
+                            <div class="fifth__container">
+                                <div class="fifth__container-inner">
+                                    <p>
+                                        Бургерная революция в России свершилась давно. Казалось бы, можно было подумать, что поезд ушел, но Black Star Burger успел заскочить в последний вагон уходящего поезда, поменять его направление и стать локомотивом. Мы готовим бургеры, потому что вопреки распространенному мнению на этот счет, бургеры – не вредная еда, это сложносочиненный бутерброд, которым можно с пользой насытиться, употребив меньшее количество калорий, чем, например, съев комплексный обед.
+                                    </p>
+                                    <p>
+                                        Бургерная революция в России свершилась давно. Казалось бы, можно было подумать, что поезд ушел, но Black Star Burger успел заскочить в последний вагон уходящего поезда, поменять его направление и стать локомотивом. Мы готовим бургеры, потому что вопреки распространенному мнению на этот счет, бургеры – не вредная еда, это сложносочиненный бутерброд, которым можно с пользой насытиться, употребив меньшее количество калорий, чем, например, съев комплексный обед.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fifth__item">
+                            <a class="fifth__link fifth__link--diet" href="">
+                            <div class="fifth__link-text common-header">Диетическое</div>
+                            </a>
+                            <div class="fifth__container">
+                                <div class="fifth__container-inner">
+                                    <p>
+                                        Бургерная революция в России свершилась давно. Казалось бы, можно было подумать, что поезд ушел, но Black Star Burger успел заскочить в последний вагон уходящего поезда, поменять его направление и стать локомотивом. Мы готовим бургеры, потому что вопреки распространенному мнению на этот счет, бургеры – не вредная еда, это сложносочиненный бутерброд, которым можно с пользой насытиться, употребив меньшее количество калорий, чем, например, съев комплексный обед.
+                                    </p>
+                                    <p>
+                                        Бургерная революция в России свершилась давно. Казалось бы, можно было подумать, что поезд ушел, но Black Star Burger успел заскочить в последний вагон уходящего поезда, поменять его направление и стать локомотивом. Мы готовим бургеры, потому что вопреки распространенному мнению на этот счет, бургеры – не вредная еда, это сложносочиненный бутерброд, которым можно с пользой насытиться, употребив меньшее количество калорий, чем, например, съев комплексный обед.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section sixth" id="sixth-section">
+                <ul class="sixth__list" id="reviews-list">
+                    <li class="sixth__item sixth__item--client1">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Элиза Спилберг</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
                     </li>
-                    <li class="footer__item" >
-                        <a class="footer__link" href="#">
-                            <svg class="footer__svg" width="20" height="20">
-                                <use width="20" height="20" xlink:href="#fb"></use>
-                            </svg>
-                        </a>
+                    <li class="sixth__item sixth__item--client2">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Константин Спилберг</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__svg" width="20" height="20">
-                                <use width="20" height="20" xlink:href="#inst"></use>
-                            </svg>
-                        </a>
+                    <li class="sixth__item sixth__item--client3">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Ирина Щербакова</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <svg class="footer__svg" width="20" height="16">
-                                <use width="20" height="16" xlink:href="#tw"></use>
-                            </svg>
-                        </a>
+                    <li class="sixth__item sixth__item--client4">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Владимир Суворкин</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="sixth__item sixth__item--client5">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Руслан Рейх</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="sixth__item sixth__item--client6">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Кристина Агутина</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="sixth__item sixth__item--client7">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Иван Абрамов</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="sixth__item sixth__item--client8">
+                        <div class="sixth__inner">
+                            <h3 class="sixth__inner-title">Том Веллин</h3>
+                            <p class="sixth__inner-text">
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть... Никогда не думал,
+                                что булочки могут быть такими мягкими,
+                                котлетка такой сочной, а сыр таким расплавленным.
+                            </p>
+                            <a class="sixth__inner-link" href="#">Подробнее</a>
+                        </div>
                     </li>
                 </ul>
-            </div> 
-        </footer>
-    </section>
-
+            </section>
+            <section class="section seventh" id="order-section">
+                <div class="seventh__inner container">
+                    <h2 class="seventh__header common-header">Закажите доставку</h2>
+                    <form class="seventh__form form" action="server.php" method="post" id="order-form">
+                        <div class="form__column">
+                            <div class="form__row">
+                                <label class="form__label">
+                                    <span class="form__label-title">Имя</span>
+                                    <input class="form__input" type="text" name="name" required>
+                                </label>
+                                <label class="form__label">
+                                    <span class="form__label-title">Телефон</span>
+                                    <input class="form__input" type="text" name="phone" required>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label">
+                                    <span class="form__label-title">Улица</span>
+                                    <input class="form__input" type="text" name="street" required>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label">
+                                    <span class="form__label-title">Дом</span>
+                                    <input class="form__input" type="text" name="house" required>
+                                </label>
+                                <label class="form__label">
+                                    <span class="form__label-title">Корпус</span>
+                                    <input class="form__input" type="text" name="housing" required>
+                                </label>
+                                <label class="form__label">
+                                    <span class="form__label-title">Квартира</span>
+                                    <input class="form__input" type="text" name="app" required>
+                                </label>
+                                <label class="form__label">
+                                    <span class="form__label-title">Этаж</span>
+                                    <input class="form__input" type="text" name="floor" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="form__row">
+                                <label class="form__label">
+                                    <span class="form__title">Комментарий</span>
+                                    <textarea class="form__textarea" name="text"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__radio">
+                                    <input class="form__radio-btn" type="radio" name="pay" value="cash" checked>
+                                    <span class="form__radio-img"></span>
+                                    <span class="form__radio-title">Потребуется сдача</span>
+                                </label>
+                                <label class="form__radio">
+                                    <input class="form__radio-btn" type="radio" name="pay" value="card">
+                                    <span class="form__radio-img"></span>
+                                    <span class="form__radio-title">Оплата по карте</span>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__checkbox">
+                                    <input class="form__checkbox-btn" type="checkbox" name="callback" value="1">
+                                    <span class="form__checkbox-img"></span>
+                                    <span class="form__checkbox-title">Не перезванивать</span>
+                                </label>
+                            </div>
+                            <div class="form__btns-set">
+                                <div class="form__btn">
+                                    <button class="order-btn" id="form-submit" type="submit">Заказать</button>
+                                </div>
+                                <label class="form__reset">
+                                    <span class="form__reset-title">Очистить</span>
+                                    <input class="form__reset-btn" type="reset">
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section eighth" id="eighth-section"></section>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--active">
+                    <a class="navigation__link nav-btn" href="#first-section"></a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#second-section"></a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#third-section"></a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#fourth-section"></a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#fifth-section"></a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#sixth-section"></a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#order-section"></a>
+                </li>
+                <!--<li class="navigation__item">
+                    <a class="navigation__link nav-btn" href="#eighth-section"></a>
+                </li> -->
+            </ul>
+        </nav>
+        <script type="template" id="reviews-overlay">
+            <div class="overlay__box">
+                <div class="overlay__header overlay__header--reviews">
+                    <div class="overlay__title"></div>
+                    <a class="overlay__close-btn" id="reviews-overlay-btn" href="#"></a>
+                </div>
+                <p class="overlay__text"></p>
+            </div>
+        </script>
+        <script type="template" id="order-overlay">
+            <div class="order-modal__box">
+                <p class="order-modal__text"></p>
+                <a class="order-modal__btn order-btn" id="order-close-btn" href="#">Закрыть</a>
+            </div>
+        </script>
     </div>
 
     <div class="all-svg" hidden>
@@ -634,7 +1129,170 @@
                 c1.502-1.112,2.807-2.498,3.832-4.078c-1.376,0.626-2.857,1.05-4.412,1.24C34.629,3.961,35.847,2.417,36.421,0.577"/>
             </symbol>
         </svg>
-    </div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="44" viewBox="0 0 46 44">
+            <g id="burger-stuff">
+                <g transform="translate(-102 -1404)">
+                    <image width="46" height="44" transform="translate(102 1404)" 
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAsCAYAAAAacYo8AAAIOklEQVRoQ8
+                    2ZCdC95RjGf5fsItljZN9FYiK7GEplS/nbkjAxlmyJUdZKRkVJSNkmS/YlWxKZUJNSJEKLLJWyK0vLbX6n5z3ec3rPd8
+                    73ff8Z3TPfzHfO+7zPc933c9/XvZwwJVW1A3B4kiumn12dPmcA+PWBdZP8YRGgVXVHYHvgHu3vFsCNgRsC7v834M/Ab4
+                    FfAD8Gvgf8KMnli5wxtOYqwOdtVFUC2g7YsgF+FHB0A9l//a/ANYEbzNhTZb4CfAw4ark3vDDwqtoA2BV4frOmeJ7QwN0
+                    P+En7Oy+JoEdSVdcGPgU8Efgd8FXA9ffvKXs28C7gfUn+M894Pp8LvKquC+wG7ARsKBbgSOCjwJeT/LsH0rWXJ7m0990
+                    zmlW7r05rN6Vy2zZD3Kc9/DXw6iSfmQd+SeBV5YafbL57PHAGsG8SD5+Qqnod8Kb2pWte3wP/FmCP9lm/3ifJ7u1GxPC4
+                    9vzBbc2ngZ2T6E6DMhN4VW3drvh6BhLwQq0BbAO8Ddg7yWXtcA8+ELhr75T1k/ylB34X4BHAXklOGlBcLM8F3gHcBDgL2
+                    CrJz4eQDwKvqns3C8gW7wFeBeyoD/Y2OQF4ZpIzq0om+gjw1Pb8p8DGPcUeLpN0LFJVt1dx4IQkB/SBVdUdmmttBlwEbJ
+                    7E+JmQITrcHPg6cC3gxUkO7l2pV/404C6Avr1rknf3rLoxcBvgO0ku7n2/W5K3t30eCHwNWL893z+JhjGQ7+677exTBN0
+                    CetMkv+8jnwBeVTcFtNYtgdcYfB6Q5Ac9EPryAwB9+DfADkneO3Sd3kSSS6rqRoAWNDb0bd1O+SewdZJjGnBvd2dgncb/
+                    PwNUVLp9bBKJYSTTwA/Syo01ngJ8H7gd8KAkZ1WV6zfotK+qDwPPBh7aV66BuDVwBPD0ZjXXfbuB0seNnTHo9o4G+wAgK
+                    3m++xs/UvGaJO53JfCqMss9CzCQDmvK3K1ZVf5V1HyTlhHd+EmN0j7enp+cRF4eS1V9oXG3LiLIl2uxqvLzccDFWroZw9s
+                    7JcmRVbVpM9Z6SQ5tJYjxc1qSjfrAzW5egZY2UI5IsqalcgGbQJTNkkiJI6mq84BbtY+jd6aAy0SyjJnRgHu8/F5VBySRYd
+                    xD3v+Q1mwY3gjs2UqOv7c14pNhbgvo6ydOuEpV6c9S4HZdAmjcbPQLcsOOJdqGhwAvAL7Zrnwi41XVFu2GrFVOTWLWnJCq
+                    0pIWdX3ZJYnU2r+9/YBXynRJVOx/Pl5V57eg1If9X4tcQy2B05MIoL+ZAfRS4OBZabqq3gwck+TYadBtf29TQLqKiUl30q+
+                    nFdQ1Pw98MYn/Xwm8qryGc9tq064cLXMIbp5oaa/vIfMWLvG8I4kxa0ytVUED9KQk4hoDN3GYZvsimNOB56wC0Np+9ewklt
+                    Fj4NdpkT99kLRkIlobYl6Qbi9ZxWZXdC47lDnXWU2BPwtUVUmnUt5a6azmlrWrsM50gOmbFyU5ZwnlrA7tjMyoS0oXnCaI
+                    N7QAMC1bZCkW+B5kl7McsQ75V2vTDklyYVX5nbX6BDt1mzYGM1tO1PizDu2A79sqQNdZq5hYrFs6kZMt7tftfSebdMlpaH
+                    8p1f7yl8D7hyq8RSxRVVsB0rIxItu91Q7LHCz4w1vN/SvAjNVvYi9LclxV2QxbS3TiOvtPudwM+8P2oHvfZvslwIuWKk+XA
+                    l9VLwPe2YB3S/dMsofAz2yF+52S/GkRK/TXVJWFz45Dftn6TW/K5sPaeouhJmLozJa8dN9pGZUXAv9S29j62c3niYWVdbP
+                    F/SIcL51aKSr6t+DHZfIM0LaA1i3TYl7Z1q5I4M5BPtjGDfrSPDF4P9uKspvNWzzwfKIGnwHcQL45YGdle/gPG5ck1kwjGd
+                    Nhu1YXLiJy8SJKztrLuBHMimVFPF5VXv1GSb6x6MlVZTMyLosXfW/WupUCdzp16aLDGw/XJeeN9azPk8j/c6XvKrKDNcvaE
+                    KtK3ckS1WahaxTcWx+3JTzMfrQ7rKrMmoe2oLcS7Gokq1Vxis2pgKORCR+fVVKuRpGTAacAdjnTYlZ+JGCicpZiPpj2gFOB+
+                    /ZePDaJ70wAN1h0gSe3hRb4n2j95UjLnqi92VVGGrVSPdFadvSfa9+5pz2t4AxoxxdmQS1sZv1jKykcd9iL7t96AytTMTkKsd
+                    PfB3DCIG2f03cV5xhq57U6jbUbcTS8kFSVg8wL+vOPqnIvLap/d423/q4ygnQOo5gEt0liBr6KVNUrmkK2cAcmObcP3EbZFOt
+                    cT82WJV2bN80cVaW/O1qwaR5L67pMROvZbSU5w7lOEm9gQqrqu8DD2qTM+FjTB+51SFcXAneeVcUtS5s5i6tKi1sDfavNX45PY
+                    iHVV7DD5QBUN7SO2n56IOREyRL2oCQGy/9V2vjCXy9sQnZPslcHaBq4dbhVnsG3U5IhNtBHH5PEsdj0lTo/P385/D7LMs3FrFq
+                    NEye2m/QLuaHWzamsgOXh17Z5+ARVVpWBJWu4ZjyeqCo7fbl2NH5eqbTpmoNX3cQfAMy6E+PmWWNmh5IOIKUvg8Ep7dG9MbEbO
+                    n9xzOYNbJnECeyqpI2rHRB13ZjxJttM+L2HLDXY19etGp1lK25idEtvjsVGQ6NmdVu/C4BHtw6qe9ZXxJLW6a7cL3+rvP/bRf
+                    n+vdrgv+uyrIOeNzQBWxJ4s6Qb+mOVo7bxwHEVZnX2beYz1Q9VojLGUY2rdZWZsnCR1XjX6LZ9GzrUveTkRcRCql9MqYiDzRP7
+                    v9itFeBLbWIw9X/vWQT5atcsbPGhg6rqnm0ia93izyfL7llXqsB/AVX9J2lIYGh9AAAAAElFTkSuQmCC"/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+            <g id="burger-calorie">
+                <g opacity=".5" transform="translate(-80 -1785)">
+                    <image width="60" height="60" transform="translate(80 1785)"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/Nl
+                    yAAAJbUlEQVRoQ82bebD25RjHv18pe0oRIVuMyBKSkV32fRn7lrGNnbGNwfjDKEpTmDCJKIREoYRC
+                    WbO0SpKGKJX0pmwv6Ws+j/s+c5/feZ7z+53O7zznvWaeed/z/Jb7/t7XdV/39b2u67HmJEnuKelBk
+                    m4k6fuS/izJkq4vaVtJZ0v6ne2s5ZQYcM0kyZ0kPVjSaQXYQ3oGYxG+Y/ustZrUmgBOch1JT5R012b
+                    iGyXx/RAB8FG2eWZUGR1wEkz0RZJuNmWml2G2kv5drt1Q0m2KmXdvv0jSIbb/NSbiUQEnubakl0i6
+                    eWeS50g6yfYfpk0+yfaSHiDpLp3r50v6lO3/jgV6bMCPk7RrM7n/SPry0D2ZZGdJT5K0efOOE22fsMk
+                    BToJWX148L/O7qmhnQavFAnaQdJMC4C+Sfm/76gooye0lPU/Stcp3XDvQ9qVjgB5Nw0meLgkNVTnG9sk
+                    NkHtIeoQk9m0rf5N0nO0zmns5vh7W3HS67SM3GcBJrivpzZI2azT34XqmJuFoemjPhL9l+wfckwTtvrpY
+                    AvsfZ/fdMRzYKBpOgrN5RgMIjf2oTB4vvOcA7RBwHGz7j+W5+0l6dHmOoOQM278c8J5lbxkL8B7FyzLYry
+                    V91TamiraeK+mOrXlK+nHZ67t3PPOvbH++PLe1pNc1z/3Q9jc3FcBotx4pv7H9mTJpFvQdjalfYPugZq9
+                    iuji67cp3G23v1Vx/u6Qtyt9n2j5iGuAku9ft0LcgY2n4hZJuVwbbYPuAApi9/bZmEpzFx7eTSoLZYr5V
+                    3mt7EpgkeYOkG1eztn14F1Dx/LvNG/DzJd2hTOZK2x8oE0aD72yOqnNtH9YB/GJJHFXIVbbf02gY6yCYQWZ
+                    quE+r7fWxNPxYSfdtXvx+2/8ooAkzb9tc+56kiTcu7IkIq8rCgiThrH5tc22UAGQq4CTXk3SDoYd9kvtIe
+                    nwzuSNtn14A31nSszpawCNPG/tQ278tz7Vemq8Ot423XpAkO9gm/Jwq5Xjb1vYl9YZZgB8laRfbew8x
+                    lyRw3Dc2IA6yfUF9NgnM6V497zrZ9jEFLPN6VeHJfEUsvc+anMNlVTgOOCK+0Uwaks6kCSFxRuxP6Fs
+                    l7LduvPE5tj/bPAsAuDDmW4OTepkQFGeGqU8kCVZB5EZYiZcmJmcBr5BEqHq38j3j/0kSi3VZEsZ5DMd
+                    e+Xtn22e2C71Ew0mY0GbVU5YJcI4+s3EgQxRP/LtgSuU9WMJOhToCBsJ/tu0rO6bKpPHmtyhxNWSChT2u
+                    cGwWtxUW5HO2z0vCM4wLPd2mF3AXSRIGez17egjK5p4FE13Jc0lwcDvZPrYsEhZFeoj0z9lJXiYJOtkV
+                    FvATRGpF0/igSfCzrIanAL67pKc23/9d0iKNTBkc0s49R9tm9QdLEgjGLUuOi0VbYFJlAYjLsRIEItKS
+                    kSO6Gr0mgLssaD/b7KV1lyQ3Lc6tzuVU219ZbmK953ASWFA154tsf3Tdkf7fsW0l6ZElaKlavsL2fqsFTK
+                    RUPesoAfwYC5Zky+JEOa/boAdaOjNZMETDHFEwF+Qw2+eOMeHVviPJdrYvLkdYG9gca/sns96/LOAkz5FEb
+                    hnh8N97pU5otcD6ni/Jh7c0KSGOuSUko75nJuByHsN0akKNY+GQvgnM+3qSbSQ9RdKtytgEI+/revchg
+                    DkPCfyrnGD7xHkD6huv0MMHlgoHtxOgAHhqPns5DZNEI5lWZVF83DeReV5P0qaROPf3uiYafmkJAE4pJRI
+                    O9UVBwDxBLTdWif/ZfjU7soRZLWvSxRG8tbAfTOM821/oA1iSeRfavrzv3rGvdxzskkRDH+BuFvLrtn/
+                    as8oQA7YA4SCkYK6SpOXP7OP9bf+1O4mFPZxk1woqCWQeUl/lg9CtuSJY4WBJYEevbB6DIi7Q20UaLnV
+                    c+CqZikuTkFqp5ZDLbe+/wvHX5fYkb2rIxCW2D5yqYVanctcSo0IHq/zC9tHrgmCFgyaB1cHuquzbpYjT
+                    EgBkNUjJVOmlXN15FfPayjZlkrlJaat4cjPgQm5tkUm3M5pSFFvIQK5k5klI25JYn5RO5iGFUJBbq7KE
+                    Lk7TMHEpVXxkVXSQKMg2Oau5SZLXkNopAy6hi4sAlxrvK5rZbTJ0cOiKJenmyD9kmzr0RLqA719Idb2+a
+                    jpYoqCsdTtSnfAUurioTt0FTOV9x/LwKHSwTIAjYi7neCdKBMoiutgGHtRwCCdHpYMF8PZj9mn0mXeSy
+                    gO4ldAYxzvhAS1gqn9UAascb/ukvpf3XS9BDTltKFttV+p7bFXXk7RMjywricdJJ1AL+OGS4JVVRqGDx
+                    cSIgD5um96rNZeS265cHg5P8DQhNC3gtmz5z2IGo/Q9JiHJdtpadNZNW71OtoYC3Oa2D10AXKoLz5ZE
+                    yxBy1hA6uOaqWsUASaY64ImGC48lDq3FZ3o0fr6K8db90SRTj9gK+AmS7t3M8gDbG9Zz1ihhaAffDLO
+                    mJrUkiKqA29zzqsLJsRYpyZ62P9n3PtjdrAxLp2pyse2PeAod/Jhtaq7rKjSc2r6wbxJJ9rD97Rlaflq
+                    pJdfL+wAYR/WC5oEv0gCWhHoNwf/c81MDQFIcIM92VZIdZ1VDkuxSmlXrK78EYKryfKjqIxM6WLglhW
+                    n6LuZG8QaApfOAvjCa1EjJbj2rzyMJLU+0PlU5BcBtsWxi58Vz0yVHIEKkstA32TehMa8nAcwS55lki6
+                    FRW4cubgDwu5tJ/sz21wpgqnOsIBEY5/J5Y4IZ8i7aF7r+pFQaKKucPyRPnoQMCB0EEwHwu5pCFGSdXkmc
+                    FqlWeiVIdW65Xns5CbVpThPTC1KCJP4/NS5H+5IolNMHQqcATW81otwI4G6Fv7v4aJl6Kx8q/7XlgX9pP
+                    oONUMAinTN6ZSIJ2mTha1UBX1M/LAb7lOI4HzIdtVVxmhGdCmC8MSyJVZlYcwHA/4m8avQ1xAphJCwQC0B
+                    DyYr6O5oB+PULzXGAxEnxd18tm/ifZ2YJxOXTNfCAA/NbBX52Q2dr7XjD/deVHQJ46D1Yy1GSiN9Jv9B9h
+                    yZr8mHoe9r7YEVYWPvbKBTAu+kKxA9d3c14kGnkCMIsaEQjm88H7dMFsBJt902a7UArxdDfMs16H14cS+
+                    I9B5febJSEH6JdeZGVdQHvBrjqqbsjlB9gUUOq7ULsJQbiwyD8zaKwt5Yzr77F4DpbAieKj0BzOCn+335YN
+                    ELhwYmF/wHvK8ibRCZHyAAAAABJRU5ErkJggg=="/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="39" viewBox="0 0 44 39">
+            <g id="stuff-beef">
+                <g transform="translate(-192 -1407)">
+                    <image width="44" height="39" transform="translate(192 1407)"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAnCAYAAAB0Q6rCAAAJ6ElEQVRYR81Ya5AU1RX+TvfM
+                    soAIKCqPnZ4FgenZRUR8bMAXkogi7k4PspqIRjEVtQxYlVSqUiXRaKKJxkckiWXKREFCrCjK9C4oPsCgRi2NJERlpwdW2eleVpBS8AHuzn
+                    Tfk7o9M8vsMsvMmvzIqZof033Oud899/Q537nkxCOLwcqEGjN5LwGM/1NJx6MXBt1hr5Nt6NcCWAnghaGCm09oTX0xWMydcf14Dzw3nEitH
+                    axtJfrpWPRbRPwcM91KjhG5ikF/BrBfISwQ4BO1RKqlEkfFOrYRSQgSt9QmdiYHa3s0/TzYVgBDQdhOHfHIXIVpc18jeorg3Q9V3R96Jrm
+                    zEgB2TL8IhAeqDlWdNfbFdw8OZLPr2trqias6uivxmY5Fv0vEjwAYktcXtKu5fqya9T4q7YAf1MzUDytxLnXsuH4vA++HE9bjA9mkG+vqER
+                    CNARH4i8fZ07TWlIxeH3Ga64/jrHc/AJmuxeKS/Jc2dIuACIAsgN0Aag9r8WsM9Y6w2dbvFCrdRl+9dDzSnOn2XqiuVhsFKyeA8X4mk31t
+                    ysb2HvktCIEbQJBBGlNihX9T2oheTcwhEO6SCgy+gohqwPgpgNFFwB2AtgH4FEwbARzP4NlEdAwTH0vCz7HhAEbmfyMAKHl7mSKfAfwBiNq
+                    ZsZOY9zApLpiHAXQyEZ8F4GwAgSKgWwBuA6gZwAkM3JKL8IJTRlMwuyO/q70qB87MUOALlbqXQ2ApCNU5J3wAoFE+6NxmfPv/sTBArYqCu3
+                    vUnmQwW/W2XIuBdjeYmd+7oB2LXgHiv+aBOUR0dShhvdLVWK95qnsng65i4kcVQecI0DIiNgG4ACwQuiDQxSTTib5SiA8y++kFEA2H4KFM
+                    OAbEE4hpJgD56y8uCE+wUO8Jt2xv62iMTFRUegrAGb4biEtC5o6NfSJkxyPLwXRnwRMBbzDoeQLLo13CIMcb9dWFyr4RQ5Wq7PSaU63X6HaI/
+                    iv7H03Ge1ZrsWaVir788CggngSjvvCeCY1BV33XVT2ZFosAXAqgKr/ppVoi+VAOeD9x4vr3mbHCr3tHypehGdbIYpBpo+6bCoQXMq0tBXU7H
+                    p1GzGOKn/V31dV4+jA3cGgJmH9/lJTKALhBM61VRUE8Ut02or8AWH50/eWt0AxrdqmoVprH3AzV6YmerbUmX5U2aUP/LQHLStnLAhA2UzI
+                    teuWICKfjU88hVl4AsAfApGJlhTC7JmG9WdJ5M1RaC68c8K7GqWNcVVmjmdbFUveD5kkjA9kqhwBZVfoIEZ4OJSxZIUoDdi6dOoEDytZ8PW
+                    73yxDT4nyVeE8zrekDAUrH9Ea3KvPqyWs//Kwc6I6YPru2xXqjoOfE9BVMuNn/T1gNxpWF8iaEMrO2te1fR6QE3w7F2RbZAtC58iUDz4hR3V
+                    epB6olGfqYwb8OmymZ2wOKLI/hZ9/bXw5w//dOPHIx52o7iHg+C/UgSKzJ1/HthdPI7ScvdjxyHZgezf2lFoDPI5Ua2GNZn8FE88KJ5EuDBV
+                    OJvkyLYLbqQG5p/p6WSD22ryky4iuFrgdwH5M4N5zY8fdewLno6pLkyJztpOCXUzlzzEtEtJLBf5KKrgiMndT6/t5KAHwdHdvQPwFwHBjLtRb
+                    rl9JHZ1yfJRgydV7RTGtOL+B0LLKIiHJcNr9D57LoFAgez4x7wDhVa7FKlbmvg62kjW3o2wHUAfSwZiZvkkq7DL1WBT7MZ8JFmmm9mGvNcf1lY
+                    lwA4BNvVHdNgf7ZTZHxRLSZCeM005ItuaTIUrX3s+nVA9HKD5umnaSSaxA4k63Kriv1YdqG/jcAcwA2NTMV701VQ5cVax5Ab4fM5Ddod2xayC
+                    M3ndvF4d1JA9uI3grwzwHs1UxrbCm0tqHPAyBb+mgGrdFmJK8prtNOrK6BSchFJSnyAxcMug3j1rbvK/ZnG9HnAJ4vgQU8b8G46h37ZZnMc2K
+                    frsr2TI6hX8bA074xY3m2KvNQIQKOEX2QIWTfr9XMlFYKsGPorzMwu/COIBpC5g5JWHxxjMgmBqkAJQExza9CRXlaFEnZKc+H5COM32imdb/s
+                    hp56cH4BHwO/I7sp0gRFVoU+IivDOyBMA3iF5BecDdaXKll2XH8MjCV560NCocm165K9A8E7158ePOORrTki5JP86LfBfIZmWj8uXtGJ6Ukm6P
+                    L7JuJrBWMMgRYDOLNXj+kukvlnZ6K/IuKlA/AHX79/AS842TNv+vDs8J6b5OTNQqzRWlPvlDqJ4meSPxZP6H67zuqHeskOIDlEjvjkRHbQzQrh
+                    yt467DTXDBWZEWeTIhrA1EBAAwMnHj5qLAuZ1tGISjmcA77fddlUXfWUfsMrbWQSKz1S3v50zLCuwikNSMBlFDqNyGIGrc6XlfUQfGNoZmrPf0N
+                    +SqF2DH2pzM/8uwwxloRarCdK6ZadGJyYvoEJC+SxEOFyd2T3c5VOvZWG3Db05wFcJPWJsXggsP77ck7l0EjsM38Q+OqQmZI9vqTIO4R9Jw17pf
+                    gjK+dfTjSu6nXksTyumVb/SbmPi7KAd86fPGTIkICTGwJ5W9hMnTYg4Ma6eqFW7Z5obsvxggrEjusPgP0p+XNXBKaWa/9lAcs1ixoIiGlhqCWZq
+                    ABLWRU/uoqXkvSVgTvCpnV7wagjPiUa3j9hJ23ZIufGXqkI8C5jxigV3ZIcybuCjoA3vH78+q2HeM6cgD3i40h4fZvkAYOWtBF5lkCXEPBxd487
+                    ZcrG9s8LTux49AeFOa5iwLKtqoI+Gr9+u23HIzeC6WFpzIw/ZjLusiHV6sXwsLuS2ivtiptIX390TbglubpjYXRm7brkP4+286NGWDYFd3hmuh
+                    yLZJlzDP3lHEHxZSsIB7WEdX6loZUgtUTqD51NkQuEQpJfBOWgEDatRe3xk08cgsCPak5N3XK0sllRShQAFY1QJ/nPCKu1hHVNpYDT8cjNilDf
+                    YhIvAjgWQFtPjztLpoK8F9Fakk+W8zUowNKZnMcUwqZ8G88S8J2QaT1TbiH/YiRAq8CYkQfbqSjurJp17Z3lbCvO4WJFnzOMyI6X16/yNpwEt
+                    xausOS8px0Yt7zwRTtNdZNBPIcUTtQkLDlJyErzKMDX5XyyQ0KdG2ptax8M2NyhVij5cWUDuWJ6aMOO3Xas7lyQWF/EczcJxs8UKCorYmQ4YW3w
+                    T2RhdJwi+D4Al+cnYUGEO0IJS/LsQUvFgP0ID81MEsTRwuWGjCQrYh2AUworM/AmgTcRlC8ZOB3MTSDs8UZ1R9UD1ecxY5Gi8M5QInXvoNEOJs
+                    IDOZc36uqB6tsASH4bHBBEflZMx6I/YUX8ozaRkhVn0FJxhMt57lw4uUZ4wRuZxAICRfPX/F0E3ixAK8KmJS9o4MT1275uOkj7/wChCje5bWQY
+                    8QAAAABJRU5ErkJggg=="/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="30" viewBox="0 0 48 30">
+            <g id="stuff-bread">
+                <g transform="translate(-190 -1464)">
+                    <image width="48" height="30" transform="translate(190 1464)" xlink:href="data:image/png;base64,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"/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="34" viewBox="0 0 39 34">
+            <g id="stuff-cheese">
+                <g transform="translate(-196 -1666)">
+                    <image width="39" height="34" transform="translate(196 1666)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAiCAYAAADcbsCGAAAJHUlEQVRYR61YC4xU5RX+zn9n5t5ZXMG0YngJXdDWan1tI8ydpV1blOzuDA8FQqy1PmqM2lra1NhHbK2JrdamsbSx6QMBX62PYLczuwSp7oLOHVBEK1BpdBeK9YlPYGfmzuM/zbl773oZd2FI/ZPN7v7/Oef//vOf/5zvXMIRRiFjJ6qIvXx8uv+dsBhnWpvKyuyAxkImzAMwCcBbDP6DVThwGy3bVT6S3UbXqFFBkStn21oZ+joGlgJoHkO3zzTdxXTBcx8eyXapJ5GyuvLZI8mMgDvUPfskpVSkKZ1/LVAo9SQvMJ/NPVFqbfsSUe2nALXXGXMB9DNjCylaDOYzZZ2BZyrlaufxFz3z7rEcXmQPZNo/3Vzcf0C874Er9SRvBHOJQCeYqdytgUE3a5+hgdUEfDG0iQajl8Crasp4Ix5p2knzHx/ija3jXdfMAJjry+6s1mrzxlnjD5XKhXMUVd81U1teGrHdYy+MVelJWpg7GMwd3GBPjFSQsSqx+bS4/wMqZRPzAZpupZw/BkLMILfH/haAOwDE/fkSGPfDoHVWZ269zBV77OnWEL9Ny/JFz2OZ1iYX5kMgpHydAYC2g/An0phopnMPjOxxC1TpPLs93uk8GfbuUHdyctOU0v7yW7ElH4s57k42uwbWArw4UCLGfVVNPxi3MPf60a6J+9oj5UPle5jwdV/2NWKeZ6bzu4+kW8y0tQHYF08/vc87aF975DBwB3vnnhit1TaAcI5v6HVoXGEtcB4/Gqjwuuf5rH0XCDf48+8ooo5YV27bsdgZAecB0zVx8Rm+gc0MXmt15VeXsm3TghMVepNzmjpzWxrZxM0mf8Lgn/myBxi0KJ7K9TWiKzIeOC9WyNwMoNVXfLQWMW4wqrWHAUz05BjrSfGfY7HyvqOlifDmpZ7E9WBaCUAx04PxdO5rw48wcY2uRHuNaGWC2ZXf4cVwr/2VcAx64IqZ5ANEfIkHFPirwep2TXoDgJPqTlll0DfjqdzaRk8vcm7WXs7ApboaubZp0eZXC5nEFEXqZmbtxNP5e4vr58yId2zZ68XZ+f3VkVgv9tiXE2O1P7G9Wqt1RgzjaQCz/DkJZKkQSd/TFYI+K5wWGgFa6J2TpJqR4ppxt4pUNxBjjZl2fumB7559prlw64v1dqiUtQ+Mle2Z6fZ4OvdD7xoyyU4QS0aXK15ppZ3vNAIqLCPlUBHuAfA5b57wa7PT+T6JxVGGgBt1QWQ189TDKkbG3g3CZwEeItBDYPwbwCBBD0ar1qAkzqMBdnsSX2AmCRmpx3LStbHC1Kto2SO10TxXARAB0MeMv5DkN6IOT1BjfpBG+LH2CW60LDlorJoqGu8zMADwIEh+q0GQ/K0HrYPTXg0AlHrtmdAQgDOHPcgZU5eXU/q5QhigeE5OO15OYKbylxd6Z09V2tgjgCX5agNrFOMEMN/IoNm+8isAogCmySs8mrf8dQn0vSAMgvEKQAWAJTTEjoynTNNNhzPBCDiAHrNSuYtEqphN3krgmwFeB9AC37MBho1mYUqHeIEfPj3mxo+bDiMyCzXMBIknuMX3iHjFahB4ILZTq1pHU+fW/3oOLWXtvQCmA+i2Us4imfQyfG9yBZjlMZwYOvlqk90V9e4fC4CkDCLVAuKZYGoBYyYp3g9GVygbHKZOzIvNdP5v9eA2WinnwrAkP7zUKDe9eiqRMqNUG6TOrfKyP5EhNbwS4ZkMyI8NxveGww9LzbTzaABuJ4DTQdhkdTn1fO0TATLMfNTNgJ5MRP1lMm5q7nxqf2C83GOfrRnPe7dGuCLe5awJwL0A4CwC8mbKsY8VTSGbsInpQoBMpXhbrCnWHc7y5UziPE2UDz8cBrZZ25zZdAu07DcmODeb2OK/wn9aKefsenClzOxTlIqMjw598GK4N+C+dss9VL4fhIvrdHaxoVNSjmS+lLXvBnCtL/NcUL+V4nNjnfnnh+u6dRvAKzwZ5hVWOv+bYc/12P1gfBnADivleDRbhs9S1gEQniWibzLrS+Pp/BPeppnk70B8vS8uiVxSRZAWdpjjYueKB0vZxG8BEuIq4z/+44NidXYVNaFSGwGc9tEB+btWKn9XcK3/APBVUbRSzoxAqJS1pVTJqwqPg2WOtTRXUXWjZYkZSd4vVKnSMa5p3AflofLvGbjcU1DUKYxZmiINLdcaABcqlI91OUm31+7zHSMau8GcUYoejHU5EmpeKpFnuzAMzruyofKQHycbiGkTE//cU2BaTkSvaGiPODLjynja8YiDsAuqKUngsnKjlcr/ypvPtLUT6R8BPAWgTSbUj8uKJrGu7fJl15mFqcvqS9gIOAbei6ecT3lmt7VG3TfNQwBiYDxPCi8w44phcLxYw9hOpOWKRHqV2ZW/Woq325O4hJm8PiEMus773r9uxl7ChEc8Wc3t8QX5TfVy5GYTaxj0DQAfWilngiTgwt+Tk5TCnQHHCyntM6PHfV66LTdj55kwx1/rY+BNApYMXx8PVaLU0jzfeXs0YDJXyiYXANztHRh0sZnKSXwfNsLgyuY2J+62Jlcy6e3EaAYJp6Or/A7sKSbcE+QgNzvnNIaS0wYVJDCsiemycKc1GkBpA6MVSMNkAHiJdaQrvmCzHxLDGlT36t6Qzwpg3giFATAPQKk95qHYW7SsX655ZBSzybmsUFGaL/MeFCEO5me1Unc22mOUsrbQ92+HzL5MwCoz5UhLCipmkr8g4puCfmKMa5A0IXRpABBGwYPEGCAYg9FiZKAe+FhXWT/vEYemCSsBviZYC9iRB07IHxEiWtPVAH3GZxWSUmKNbgJgP3mgMaCFywmPYxrQmgcb6XXLmTnnalL9w1zxI3Y06occeRTFbGKyxygAjwIR+EoA7wHChI8JuHwNEI8PAiRcbgCGhAwNmEPv7w2qzmjsqOGvTF4+ZO4zybi3ZFTHG1pNYKYW9jicbgGrWb7XhX5JkNcN/hcz7iCicOcmtXU9CBUwzhfSC2CEHTUMrphpOzlorOXTQTz9tHRoH4fQ1x5xh6onexxuBLRuAcgBcJ1/EyE93sOMq4noPq+vCLGjhsB5xTliTbM6ctLQ/F9DarbB3GJonqVJnwrQKQQ6ebh6YEaYHf0PhkIcoeJj7ZgAAAAASUVORK5CYII="/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="37" viewBox="0 0 43 37">
+            <g id="stuff-cucomber">
+                <g transform="translate(-196 -1612)">
+                    <image width="43" height="37" transform="translate(196 1612)" xlink:href="data:image/png;base64,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"/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+            <g id="stuff-salad">
+                <g transform="translate(-196 -1511)">
+                    <image width="38" height="38" transform="translate(196 1511)" xlink:href="data:image/png;base64,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"/>
+                </g>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="43" viewBox="0 0 41 43">
+            <g id="stuff-sauce">
+                <g transform="translate(-191 -1564)">
+                    <image width="41" height="43" transform="translate(191 1564)" xlink:href="data:image/png;base64,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"/>
+                </g>
+            </g>
+        </svg>
 
-<script id="wappalyzer" src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/inject.js"></script></body>
+    </div>
+    <script src="lib/script.js"></script>
+</body>
 </html>
