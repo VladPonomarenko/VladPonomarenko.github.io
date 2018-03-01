@@ -148,6 +148,9 @@ section.single-hero {
 	z-index: 0;
 	overflow: hidden;
 }
+.background-img--left{
+	background-position: left !important;
+}
 .block-img {
 	position: relative;
 }
@@ -524,6 +527,10 @@ span.arrow-right:after {
 	-ms-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
+}
+
+.text-middle{
+	vertical-align: middle;
 }
 /* End about section*/
 
