@@ -461,7 +461,7 @@ section.divider.medium {
 	padding-bottom: 10em;
 }
 section.main {
-	/*padding-top: 7em;*/
+	padding-top: 7em; /*margin after hero*/
 	padding-bottom: 7em;
 }
 section.main.pb-0 {

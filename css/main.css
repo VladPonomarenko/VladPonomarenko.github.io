@@ -280,13 +280,28 @@ section.hero .inner-hero {
 	color: #f7897c;
 }
 .hero-content {
-	position: relative;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 70%;
+	display: flex;
+	align-items: center;
+	/*position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
+	-o-transform: translateY(-50%);*/
+}
+.hero-content__inner{
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
 }
 .block-subscribe {
 	background: rgba(34, 34, 34, .6);
