@@ -607,8 +607,8 @@ span.arrow-right:after {
 	font-family: 'Roboto Condensed', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 .block-price span.price {
-	font-size: 140px;
-	line-height: 140px;
+	font-size: 100px;
+	line-height: 100px;
 }
 .block-price span.dollar {
 	font-size: 20px;
@@ -727,6 +727,17 @@ span.arrow-right:after {
 .block-social a:hover {
 	opacity: .5;
 	color: #ffffff;
+}
+.phone{
+	text-decoration: none;
+	color: inherit;
+}
+.direct-mail{
+	cursor: pointer;
+}
+.phone:hover,
+.direct-mail:hover{
+	color: #000;
 }
 /* End contact section*/
 
