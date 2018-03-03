@@ -298,7 +298,7 @@ section.hero .inner-hero {
 .hero-content__inner{
 	display: flex;
 	flex-direction: column;
-	height: 70%;
+	height: 60%;
 	width: 100%;
 	align-items: center;
 	justify-content: space-between;
@@ -613,6 +613,9 @@ span.arrow-right:after {
 .block-storie li.block-title {
 	background: #ffffff;
 }
+.block-member__text{
+	height: 50px;
+}
 /* End stories section*/
 
 /* Pricing section*/
@@ -746,9 +749,6 @@ span.arrow-right:after {
 .phone{
 	text-decoration: none;
 	color: inherit;
-}
-.direct-mail{
-	cursor: pointer;
 }
 .phone:hover,
 .direct-mail:hover{
