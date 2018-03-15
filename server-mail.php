@@ -23,7 +23,7 @@
         $mail->setFrom('*@mail.ru', 'Order request');
         $mail->addAddress('*@gmail.com', 'Bill Klinton');     
         /* $mail->addAddress('ellen@example.com'); */              
-        /* $mail->addReplyTo('ors_step.obj@mail.ru', 'Information'); */
+        /* $mail->addReplyTo('ellen@example.com', 'Information'); */
         /* $mail->addCC('cc@example.com');
         $mail->addBCC('bcc@example.com'); */
 
