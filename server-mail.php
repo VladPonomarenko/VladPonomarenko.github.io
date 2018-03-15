@@ -1,44 +1,46 @@
 <?php
-    require "PHPMailer-master/src/PHPMailer.php";
+
     $name = $_POST['name'];
-    $validEmail = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-    
-    if ($validEmail) {
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\Exception;
+    $phone = $_POST['phone'];
+     
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
-        require 'vendor/autoload.php';
+    require 'vendor/autoload.php';
 
-        $mail = new PHPMailer(true);                              
-        try {
-            $mail->SMTPDebug = 2;                                
-            $mail->isSMTP();                                     
-            $mail->Host = 'smtp1.example.com;smtp2.example.com'; 
-            $mail->SMTPAuth = true;                              
-            $mail->Username = 'user@example.com';                
-            $mail->Password = 'secret';                           
-            $mail->SMTPSecure = 'tls';                           
-            $mail->Port = 587;                                   
+    $mail = new PHPMailer(true);
 
-            $mail->setFrom('from@example.com', 'Mailer');
-            $mail->addAddress('joe@example.net', 'Joe User');     
-            $mail->addAddress('ellen@example.com');              
-            $mail->addReplyTo('info@example.com', 'Information');
-            $mail->addCC('cc@example.com');
-            $mail->addBCC('bcc@example.com');
+    try {
+        $mail->SMTPDebug = 0;                                
+        $mail->isSMTP();                                     
+        $mail->Host = 'smtp.mail.ru'; 
+        $mail->SMTPAuth = true;                              
+        $mail->Username = '*@mail.ru';                
+        $mail->Password = '******';                           
+        $mail->SMTPSecure = 'ssl';                           
+        $mail->Port = 465;                                   
 
-            $mail->addAttachment('/var/tmp/file.tar.gz');        
-            $mail->addAttachment('/tmp/image.jpg', 'new.jpg');   
+        $mail->setFrom('*@mail.ru', 'Order request');
+        $mail->addAddress('*@gmail.com', 'Bill Klinton');     
+        /* $mail->addAddress('ellen@example.com'); */              
+        /* $mail->addReplyTo('ors_step.obj@mail.ru', 'Information'); */
+        /* $mail->addCC('cc@example.com');
+        $mail->addBCC('bcc@example.com'); */
 
-            $mail->isHTML(true);                                  
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        /* $mail->addAttachment('/var/tmp/file.tar.gz');        
+        $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    */
 
-            $mail->send();
-            echo 'Message has been sent';
-        } catch (Exception $e) {
-            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-        }
+        $mail->isHTML(true);                                  
+        $mail->Subject = 'Order request';
+        $mail->Body    = 'Name: '.$name.'. Phone: '.$phone;
+        /* $mail->AltBody = 'This is the body in plain text for non-HTML mail clients'; */
+
+        $mail->send();
+        $mail->ClearAllRecipients();
+        echo 'OK';
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
+    
+    
 ?>

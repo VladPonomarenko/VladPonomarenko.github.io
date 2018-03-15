@@ -113,6 +113,46 @@
     instaFeed.run();
 
 
+    // form sender
 
+    $('#hero-form').on('submit', (e) =>{
+        
+        e.preventDefault();
+        let form = $(e.target),
+            data = form.serialize(),
+            url = form.attr('action'),
+            type = form.attr('method');
+        /* console.log('form ', form); */
+        
+        ajaxForm(form).done( (msg) => {
+            let mes = msg.mes,
+                status = msg.status;
+                console.log(status);
+                
+            if (status === 'OK') {
+                console.log('OK'); // test
+            }else{
+                console.log('server error ', status); // test
+            }
+          }).fail( (jqXHR, textStatus) => {
+                console.log('client error', textStatus);
+               /*  console.log(jqXHR); */ // test
+          });
+      
+      
+        function ajaxForm(form){
+            let data = form.serialize(),
+                url = form.attr('action'),
+                method = form.attr('method');
+                console.log(data);
+                
+            return $.ajax({
+                type: method,
+                url: url,
+                dataType: 'text',
+                data: data
+            });
+        }
+    });
 
 })(jQuery);
