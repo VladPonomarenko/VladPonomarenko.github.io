@@ -11,17 +11,17 @@
     $mail = new PHPMailer(true);
 
     try {
-        $mail->SMTPDebug = 0;                                
+        $mail->SMTPDebug = 2;                                
         $mail->isSMTP();                                     
         $mail->Host = 'smtp.mail.ru'; 
         $mail->SMTPAuth = true;                              
-        $mail->Username = '*@mail.ru';                
-        $mail->Password = '******';                           
+        $mail->Username = '***';                
+        $mail->Password = '***';                           
         $mail->SMTPSecure = 'ssl';                           
         $mail->Port = 465;                                   
 
-        $mail->setFrom('*@mail.ru', 'Order request');
-        $mail->addAddress('*@gmail.com', 'Bill Klinton');     
+        $mail->setFrom('****', 'Order request');
+        $mail->addAddress('****', 'Bill Klinton');     
         /* $mail->addAddress('ellen@example.com'); */              
         /* $mail->addReplyTo('ellen@example.com', 'Information'); */
         /* $mail->addCC('cc@example.com');
@@ -32,7 +32,7 @@
 
         $mail->isHTML(true);                                  
         $mail->Subject = 'Order request';
-        $mail->Body    = 'Name: '.$name.'. Phone: '.$phone;
+        $mail->Body    = 'Имя: '.$name.'. Телефон: '.$phone;
         /* $mail->AltBody = 'This is the body in plain text for non-HTML mail clients'; */
 
         $mail->send();

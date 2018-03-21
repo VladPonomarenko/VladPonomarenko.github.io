@@ -124,19 +124,19 @@
             type = form.attr('method');
         /* console.log('form ', form); */
         
-        ajaxForm(form).done( (msg) => {
-            let mes = msg.mes,
+        ajaxForm(form).success( function(msg) {
+            /* let mes = msg.mes,
                 status = msg.status;
-                console.log(status);
+                console.log(mes);
                 
-            if (status === 'OK') {
+            if (status == 'OK') {
                 console.log('OK'); // test
             }else{
                 console.log('server error ', status); // test
-            }
+            } */
+            console.log('message send');
           }).fail( (jqXHR, textStatus) => {
                 console.log('client error', textStatus);
-               /*  console.log(jqXHR); */ // test
           });
       
       
@@ -144,7 +144,7 @@
             let data = form.serialize(),
                 url = form.attr('action'),
                 method = form.attr('method');
-                console.log(data);
+                /* console.log(data); */
                 
             return $.ajax({
                 type: method,
