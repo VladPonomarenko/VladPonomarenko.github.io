@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VladPonomarenko/VladPonomarenko.github.io/issues"
   },
-  "homepage": "https://github.com/VladPonomarenko/VladPonomarenko.github.io#readme"
+  "homepage": "https://github.com/VladPonomarenko/VladPonomarenko.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
