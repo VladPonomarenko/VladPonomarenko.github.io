@@ -6,6 +6,7 @@ const imgMin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
+const removeHtmlComments = require('gulp-remove-html-comments');
 
 const paths = {
   root: './build',
@@ -19,11 +20,11 @@ const paths = {
     },
   scripts: {
 	src: './src/js/**/*.js',
-	dest: './dest/js/js'
+	dest: './build/js/'
     },
   fonts: {
-	src: './src/fonts/**/*.woff*',
-	dest: './build/fonts'
+	src: './src/font/**/*.*',
+	dest: './build/font'
     },
   img: {
 	src: './src/img/**/*.*',
@@ -37,25 +38,26 @@ const paths = {
   }	
 };
 
-function deleteBuild() {
+function clear() {
 	return del(paths.root);
 }
 
 function minifyHTML() {
-	return gulp.src(paths.pages.src)
+    return gulp.src(paths.pages.src)
+        .pipe(removeHtmlComments())
 		.pipe(htmlMin({collapseWhitespace: true}))
-		.pipe(gulp.dest(paths.pages.dest);
+		.pipe(gulp.dest(paths.pages.dest));
 }
 			  
 function minifyCSS() {
-	return gulp.src(paths.css.src)
-		.pipe(cleanCSS({compatibility: 'ie8'}))
+    return gulp.src(paths.css.src)
+        .pipe(cleanCSS({compatibility: 'ie8'}))
 		.pipe(gulp.dest(paths.css.dest));
 }
 	
 function minifyIMG() {
 	return gulp.src(paths.img.src)
-		.pipe(imgMin()
+		.pipe(imgMin())
 		.pipe(gulp.dest(paths.img.dest));
 }
 		      
@@ -66,12 +68,12 @@ function fonts() {
 	
 function scripts() {
 	return gulp.src(paths.scripts.src)
-		.pipe(concat('app.js'))
-		.pipe(uglify())
-		.pipe(rename({
+		/* .pipe(concat('app.js')) */
+		/* .pipe(uglify()) */
+		/* .pipe(rename({
 			suffix: '.min'
-			}))
-		.pipe(gulp.dest(paths.scripts.dest);
+			})) */
+		.pipe(gulp.dest(paths.scripts.dest));
 }
 		      
 function php() {
@@ -95,7 +97,7 @@ function watch() {
 
 
 
-exports.del = deleteBuild;
+exports.del = clear;
 exports.minhtml = minifyHTML;
 exports.mincss = minifyCSS;
 exports.minimg = minifyIMG;
@@ -106,7 +108,8 @@ exports.watch = watch;
 exports.phpstuff = phpStuff;
 	
 gulp.task('default', gulp.series(
-	deleteBuild,
-	gulp.parallel(minifyHTML, minifyCSS, minifyIMG, fonts, scripts, php, phpStuff),
+	clear,
+    gulp.parallel(minifyHTML, minifyCSS, scripts, php),
+    gulp.parallel(minifyIMG, phpStuff, fonts),
 	watch
 ));
