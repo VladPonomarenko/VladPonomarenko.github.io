@@ -125,18 +125,15 @@
         /* console.log('form ', form); */
         
         ajaxForm(form).success( function(msg) {
-            /* let mes = msg.mes,
-                status = msg.status;
-                console.log(mes);
-                
-            if (status == 'OK') {
-                console.log('OK'); // test
-            }else{
-                console.log('server error ', status); // test
-            } */
-            console.log('message send');
+            let modal = document.querySelector('#modal-window');
+            form[0].reset();
+            modal.style.display = 'block';
+            modal.addEventListener('click', () => {
+               modal.style.display = 'none';
+            });
+            /* console.log('message send'); */
           }).fail( (jqXHR, textStatus) => {
-                console.log('client error', textStatus);
+                console.log('client error'/* , textStatus */);
           });
       
       

@@ -20,8 +20,8 @@
         $mail->SMTPSecure = 'ssl';                           
         $mail->Port = 465;                                   
 
-        $mail->setFrom('****', 'Order request');
-        $mail->addAddress('****', 'Bill Klinton');     
+        $mail->setFrom('***', 'Order request');
+        $mail->addAddress('***', 'Bill Klinton');     
         
         $mail->isHTML(true);                                  
         $mail->Subject = 'Order request';
