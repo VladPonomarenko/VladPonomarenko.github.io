@@ -2641,6 +2641,10 @@ input[type='submit'], button[type='button'] {
 }
 
 /*Slick arrow*/
+.row--center{
+  justify-content: center;
+}
+
 .slick-arrow-style-1 {
   position: relative;
 }
