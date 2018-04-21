@@ -264,7 +264,7 @@
     // Variable selector
 
     // Navbar
-    var header_bar = $('.js-header-bar, .js-header-bar-mobile');
+    var header_bar = $('.js-header-bar, .js-header-bar-mobile, .big-btn');
     var header_bar_mobile = $('.js-header-bar-mobile');
     var header_bar_navbar = header_bar_mobile.find('.navbar-primary');
     var header_bar_toggler = header_bar_mobile.find('.navbar-toggler');
@@ -280,8 +280,9 @@
 
     // Bind to scroll
     var topMenu = header_bar,
-        menuItems = topMenu.find(".nav-link"),
-        scrollItems = menuItems.map(function(){
+        menuItems = topMenu.find(".nav-link");
+        console.log(menuItems);
+    var scrollItems = menuItems.map(function(){
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
         });
