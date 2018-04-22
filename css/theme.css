@@ -4776,3 +4776,21 @@ ul.list-reset {
 .wow {
   visibility: hidden;
 }
+
+.big-btn__link {
+  display: inline-block;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background-color: #fff537;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 20px 25px;
+  letter-spacing: 0.2em;
+  line-height: 18px;
+  position: relative;
+}
+
+.big-btn__link:hover{
+  color: #aaa;
+}
