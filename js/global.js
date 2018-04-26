@@ -4,10 +4,20 @@
 
     // Global variables
     var html_body = $('html, body');
+    var activeModal = 0;
 
     //-------------------------------------------------------
     // Config Library
     //-------------------------------------------------------
+    // Read data
+    var jsonData = $.getJSON('data/data.json', (data) => {
+        //console.log(data);
+    });
+
+    var cardLinkModal =$('.card-link-modal').on('click', (e) => {
+        activeModal = e.target.dataset.name;
+    });
+
 
     // Config Slick
     var slickClass = $('.js-slick');
@@ -281,7 +291,7 @@
     // Bind to scroll
     var topMenu = header_bar,
         menuItems = topMenu.find(".nav-link");
-        console.log(menuItems);
+        //console.log(menuItems);
     var scrollItems = menuItems.map(function(){
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
@@ -343,6 +353,24 @@
             slickClass.slick('setPosition');
             loader.hide();
         });
+    });
+
+    modalAPImodal.on('shown.bs.modal', function () {
+        //console.log(jsonData.responseJSON);
+        //console.log(this);
+        //console.log(activeModal);
+        //console.log($('#modal-text'));
+        let modal = $('#modal-text');
+        console.log(modal);
+        if (modal.length) {
+            modal[0].innerText = jsonData.responseJSON[activeModal].text;
+            var array = $('#modal-options li');
+            $.each(array, (index, val) => {
+                //console.log(index, val);
+                array[index].innerText = jsonData.responseJSON[activeModal].options[index];
+            });
+        }
+        
     });
 
     modalAPImodal.on('hide.bs.modal', function () {

@@ -4794,3 +4794,7 @@ ul.list-reset {
 .big-btn__link:hover{
   color: #aaa;
 }
+
+.img-fluid--center{
+  margin: 0 auto;
+}
