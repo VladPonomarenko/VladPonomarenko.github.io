@@ -361,7 +361,7 @@
         //console.log(activeModal);
         //console.log($('#modal-text'));
         let modal = $('#modal-text');
-        console.log(modal);
+        //console.log(modal);
         if (modal.length) {
             modal[0].innerText = jsonData.responseJSON[activeModal].text;
             var array = $('#modal-options li');
