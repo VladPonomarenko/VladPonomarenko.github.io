@@ -4798,3 +4798,7 @@ ul.list-reset {
 .img-fluid--center{
   margin: 0 auto;
 }
+
+.specials{
+  align-items: center;
+}
