@@ -366,9 +366,18 @@
             modal[0].innerText = jsonData.responseJSON[activeModal].text;
             var array = $('#modal-options li');
             $.each(array, (index, val) => {
-                //console.log(index, val);
                 array[index].innerText = jsonData.responseJSON[activeModal].options[index];
             });
+            var imgs = $('#modal-picts .modal-img');
+            console.log($('#modal-picts'));
+            $.each(imgs, (index, img) => {
+                console.log(img);
+                imgs[index].src = jsonData.responseJSON[activeModal].picts[index];
+            });
+            //console.log($('#modal-img-1'));
+            /* $('#modal-img-1')[0].src = jsonData.responseJSON[activeModal].picts[0];
+            $('#modal-img-2')[0].src = jsonData.responseJSON[activeModal].picts[1];
+            $('#modal-img-3')[0].src = jsonData.responseJSON[activeModal].picts[2]; */
         }
         
     });

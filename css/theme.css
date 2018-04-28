@@ -4803,3 +4803,7 @@ ul.list-reset {
   align-items: center;
   align-content: stretch;
 }
+
+.modal-header-logo img{
+  width: 80px;
+}
