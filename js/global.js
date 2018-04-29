@@ -14,6 +14,10 @@
         //console.log(data);
     });
 
+    var blogData = $.getJSON('data/blog.json', (data) => {
+        //console.log(data);
+    });
+
     var cardLinkModal =$('.card-link-modal').on('click', (e) => {
         activeModal = e.target.dataset.name;
     });
@@ -355,30 +359,35 @@
         });
     });
 
-    modalAPImodal.on('shown.bs.modal', function () {
+    modalAPImodal.on('shown.bs.modal', function (e) {
         //console.log(jsonData.responseJSON);
         //console.log(this);
         //console.log(activeModal);
         //console.log($('#modal-text'));
-        let modal = $('#modal-text');
-        //console.log(modal);
-        if (modal.length) {
-            modal[0].innerText = jsonData.responseJSON[activeModal].text;
-            var array = $('#modal-options li');
-            $.each(array, (index, val) => {
-                array[index].innerText = jsonData.responseJSON[activeModal].options[index];
-            });
-            var imgs = $('#modal-picts .modal-img');
-            console.log($('#modal-picts'));
-            $.each(imgs, (index, img) => {
-                console.log(img);
-                imgs[index].src = jsonData.responseJSON[activeModal].picts[index];
-            });
-            //console.log($('#modal-img-1'));
-            /* $('#modal-img-1')[0].src = jsonData.responseJSON[activeModal].picts[0];
-            $('#modal-img-2')[0].src = jsonData.responseJSON[activeModal].picts[1];
-            $('#modal-img-3')[0].src = jsonData.responseJSON[activeModal].picts[2]; */
+        //console.log(e.target.id);
+        if (e.target.id == "project-post") {
+            let modal = $('#modal-text');
+            if (modal.length) {
+                modal[0].innerText = jsonData.responseJSON[activeModal].text;
+                var array = $('#modal-options li');
+                $.each(array, (index, val) => {
+                    array[index].innerText = jsonData.responseJSON[activeModal].options[index];
+                });
+                var imgs = $('#modal-picts .modal-img');
+                //console.log($('#modal-picts'));
+                $.each(imgs, (index, img) => {
+                    //console.log(img);
+                    imgs[index].src = jsonData.responseJSON[activeModal].picts[index];
+                });
+            }
+        } else if (e.target.id == "blog-post") {
+            console.log(blogData);
+            //console.log(activeModal);
+            //console.log($('#modal-title'));
+            $('#modal-title')[0].innerText = blogData.responseJSON[activeModal].title;
+            $('#blog-text')[0].innerHTML = blogData.responseJSON[activeModal].text;
         }
+        
         
     });
 
