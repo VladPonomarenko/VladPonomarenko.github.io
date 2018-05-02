@@ -295,7 +295,6 @@
     // Bind to scroll
     var topMenu = header_bar,
         menuItems = topMenu.find(".nav-link");
-        //console.log(menuItems);
     var scrollItems = menuItems.map(function(){
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
@@ -360,11 +359,6 @@
     });
 
     modalAPImodal.on('shown.bs.modal', function (e) {
-        //console.log(jsonData.responseJSON);
-        //console.log(this);
-        //console.log(activeModal);
-        //console.log($('#modal-text'));
-        //console.log(e.target.id);
         if (e.target.id == "project-post") {
             let modal = $('#modal-text');
             if (modal.length) {
@@ -374,16 +368,11 @@
                     array[index].innerText = jsonData.responseJSON[activeModal].options[index];
                 });
                 var imgs = $('#modal-picts .modal-img');
-                //console.log($('#modal-picts'));
                 $.each(imgs, (index, img) => {
-                    //console.log(img);
                     imgs[index].src = jsonData.responseJSON[activeModal].picts[index];
                 });
             }
         } else if (e.target.id == "blog-post") {
-            console.log(blogData);
-            //console.log(activeModal);
-            //console.log($('#modal-title'));
             $('#modal-title')[0].innerText = blogData.responseJSON[activeModal].title;
             $('#blog-text')[0].innerHTML = blogData.responseJSON[activeModal].text;
         }

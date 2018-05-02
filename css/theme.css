@@ -4802,6 +4802,7 @@ ul.list-reset {
 .specials{
   align-items: center;
   align-content: stretch;
+  justify-content: space-around; /* edited */
 }
 
 .modal-header-logo img{
