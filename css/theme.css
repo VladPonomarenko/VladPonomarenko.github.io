@@ -4808,3 +4808,8 @@ ul.list-reset {
 .modal-header-logo img{
   width: 80px;
 }
+
+.adv-height{
+  min-height: 350px;
+  cursor: pointer;
+}
