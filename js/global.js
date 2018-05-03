@@ -374,6 +374,7 @@
             }
         } else if (e.target.id == "blog-post") {
             $('#modal-title')[0].innerText = blogData.responseJSON[activeModal].title;
+            $('#blog-img').attr("src", blogData.responseJSON[activeModal].img),
             $('#blog-text')[0].innerHTML = blogData.responseJSON[activeModal].text;
         }
         
