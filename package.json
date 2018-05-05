@@ -1,0 +1,29 @@
+{
+  "name": "ora",
+  "version": "1.0.0",
+  "description": "ORA v.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladPonomarenko/VladPonomarenko.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladPonomarenko/VladPonomarenko.github.io/issues"
+  },
+  "homepage": "https://github.com/VladPonomarenko/VladPonomarenko.github.io#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
